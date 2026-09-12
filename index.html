@@ -252,12 +252,9 @@
               manager</span>
           </div>
           <!-- <a class="btn btn-dark btn-lg" href="#lead-form">Talk to an Expert</a> -->
-           <a
-  href="#"
-  class="btn btn-primary open-lead-form"
->
-  Talk to an Expert
-</a>
+          <a href="#" class="btn btn-primary open-lead-form">
+            Talk to an Expert
+          </a>
         </div>
         <div class="amazon-card reveal">
           <div class="amazon-card-head"><span>AMAZON</span><b>Seller Growth</b></div>
@@ -307,12 +304,9 @@
               <li>Dedicated account manager</li>
             </ul>
             <!-- <a class="btn btn-primary" href="#lead-form">Launch My Business</a> -->
-             <a
-  href="#"
-  class="btn btn-primary open-lead-form"
->
-  Launch My Business
-</a>
+            <a href="#" class="btn btn-primary open-lead-form">
+              Launch My Business
+            </a>
           </article>
         </div>
       </div>
@@ -331,46 +325,35 @@
           <form id="leadCaptureForm"
             action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DgL00000O0QrA"
             method="POST">
-
             <input type="hidden" name="oid" value="00DgL00000O0QrA">
-
             <input type="hidden" name="retURL" value="https://dropshipping.sovely.in/?lead=success">
-
             <input type="hidden" name="lead_source" value="Web">
-
             <div class="form-row">
-
               <label>
                 First Name *
                 <input id="first_name" maxlength="40" name="first_name" type="text" placeholder="Enter your first name"
                   required>
               </label>
-
               <label>
                 Last Name *
                 <input id="last_name" maxlength="80" name="last_name" type="text" placeholder="Enter your last name"
                   required>
               </label>
-
             </div>
-
             <label>
               Mobile Number *
               <input id="mobile" maxlength="40" name="mobile" type="tel" placeholder="Enter your 10-digit mobile number"
                 pattern="[6-9][0-9]{9}" required>
             </label>
-
             <label>
               Email Address *
               <input id="email" maxlength="80" name="email" type="email" placeholder="Enter your email address"
                 required>
             </label>
-
             <label class="checkbox-field">
               <input id="00NgL00003SZKIL" name="00NgL00003SZKIL" type="checkbox" value="1">
               <span>Are you already doing dropshipping?</span>
             </label>
-
             <label>
               Do you have GST? *
               <select id="00NgL00004sgMkX" name="00NgL00004sgMkX" required>
@@ -379,42 +362,17 @@
                 <option value="No">No</option>
               </select>
             </label>
-
             <label>
               What would you like help with?
               <textarea name="question" rows="3" placeholder="Tell us your question..."></textarea>
             </label>
-
             <button class="btn btn-primary btn-lg form-submit" type="submit">
               Submit & Get Started <span>→</span>
             </button>
-
             <p class="form-note">
               By submitting this form, you agree to be contacted by the Sovely team.
             </p>
-
           </form>
-          <!-- <form id="leadCaptureForm" novalidate>
-            <div class="form-row">
-              <label>Full Name *<input type="text" name="name" autocomplete="name" placeholder="Enter your name" required></label>
-              <label>Mobile Number *<input type="tel" name="phone" autocomplete="tel" placeholder="10-digit mobile number" required></label>
-            </div>
-            <label>Email Address *<input type="email" name="email" autocomplete="email" placeholder="you@example.com" required></label>
-            <div class="form-row">
-              <label>Are you already doing dropshipping? *
-                <select name="dropshipping" required><option value="">Select</option><option>Yes</option><option>No</option></select>
-              </label>
-              <label>Do you have GST? *
-                <select name="gst" required><option value="">Select</option><option>Yes</option><option>No</option></select>
-              </label>
-            </div>
-            <label>What would you like help with?
-              <textarea name="question" rows="3" placeholder="Tell us about your business or your question..."></textarea>
-            </label>
-            <button class="btn btn-primary btn-lg form-submit" type="submit">Submit & Get Started <span>→</span></button>
-            <p class="form-note">By submitting, you agree to be contacted by the Sovely team about your enquiry.</p>
-            <p class="form-error" id="formError" role="alert"></p>
-          </form> -->
         </div>
       </div>
     </section>
@@ -467,12 +425,9 @@
           <p>Let Sovely handle the operational complexity while you focus on selling.</p>
         </div>
         <!-- <a class="btn btn-primary btn-lg" href="#lead-form">Start Selling Today →</a> -->
-         <a
-  href="#"
-  class="btn btn-primary btn-lg open-lead-form"
->
-  Start Selling
-</a>
+        <a href="#" class="btn btn-primary btn-lg open-lead-form">
+          Start Selling
+        </a>
       </div>
     </section>
   </main>
@@ -507,264 +462,107 @@
       <div class="success-icon">✓</div>
       <h2 id="thankTitle">Thank you!</h2>
       <p>Your details have been submitted successfully. Our representative will connect with you shortly.</p>
-      <a class="btn btn-primary btn-lg" id="modalWhatsapp" href="https://wa.me/919353215891" target="_blank"
+      <a class="btn btn-primary btn-lg" id="modalWhatsapp" href="https://chat.whatsapp.com/HLG8bwkeZig5V2aBcK9lIi" target="_blank"
         rel="noopener">Join WhatsApp Community</a>
       <button class="text-button" type="button" data-close-modal>Close</button>
     </div>
   </div>
-<!-- =========================================
+
+  <!-- =========================================
      AUTOMATIC LEAD FORM POPUP
 ========================================= -->
-
-<div
-  class="lead-modal"
-  id="leadModal"
-  aria-hidden="true"
->
-
-  <div class="lead-modal-backdrop"></div>
-
-  <div class="lead-modal-box">
-
-    <div class="lead-modal-header">
-
-      <span class="section-kicker">
-        GET STARTED WITH SOVELY
-      </span>
-
-      <h2>
-        Start Your
-        <span>Dropshipping Journey</span>
-      </h2>
-
-      <p>
-        Fill in your details and our team will help you get started.
-      </p>
-
-    </div>
-
-
-    <!-- SALESFORCE FORM -->
-
-    <form
-      id="popupLeadForm"
-      action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DgL00000O0QrA"
-      method="POST"
-    >
-
-      <input
-        type="hidden"
-        name="oid"
-        value="00DgL00000O0QrA"
-      >
-
-      <input
-        type="hidden"
-        name="retURL"
-        value="https://sovely.in/?lead=success"
-      >
-
-      <input
-        type="hidden"
-        name="lead_source"
-        value="Web"
-      >
-
-
-      <div class="form-row">
-
-        <label>
-          First Name *
-
-          <input
-            maxlength="40"
-            name="first_name"
-            type="text"
-            placeholder="First name"
-            required
-          >
-
-        </label>
-
-
-        <label>
-          Last Name *
-
-          <input
-            maxlength="80"
-            name="last_name"
-            type="text"
-            placeholder="Last name"
-            required
-          >
-
-        </label>
-
+  <div class="lead-modal" id="leadModal" aria-hidden="true">
+    <div class="lead-modal-backdrop"></div>
+    <div class="lead-modal-box">
+      <div class="lead-modal-header">
+        <span class="section-kicker">
+          GET STARTED WITH SOVELY
+        </span>
+        <h2>
+          Start Your<span>Dropshipping Journey</span>
+        </h2>
+        <p>
+          Fill in your details and our team will help you get started.
+        </p>
       </div>
 
+      <!-- SALESFORCE FORM -->
 
-      <label>
-        Mobile Number *
-
-        <input
-          maxlength="40"
-          name="mobile"
-          type="tel"
-          placeholder="10-digit mobile number"
-          pattern="[6-9][0-9]{9}"
-          required
-        >
-
-      </label>
-
-
-      <label>
-        Email Address *
-
-        <input
-          maxlength="80"
-          name="email"
-          type="email"
-          placeholder="you@example.com"
-          required
-        >
-
-      </label>
-
-
-      <label class="checkbox-field">
-
-        <input
-          name="00NgL00003SZKIL"
-          type="checkbox"
-          value="1"
-        >
-
-        <span>
-          Are you already doing dropshipping?
-        </span>
-
-      </label>
-
-
-      <label>
-        Do you have GST? *
-
-        <select
-          name="00NgL00004sgMkX"
-          required
-        >
-
-          <option value="">
-            Select
-          </option>
-
-          <option value="Yes">
-            Yes
-          </option>
-
-          <option value="No">
-            No
-          </option>
-
-        </select>
-
-      </label>
-
-
-      <label>
-        What would you like help with?
-
-        <textarea
-          name="question"
-          rows="3"
-          placeholder="Tell us your question..."
-        ></textarea>
-
-      </label>
-
-
-      <button
-        class="btn btn-primary btn-lg form-submit"
-        type="submit"
-      >
-        Submit & Get Started →
-      </button>
-
-
-      <p class="form-note">
-        Your information is safe and will only be used
-        to contact you about Sovely.
-      </p>
-
-    </form>
-
+      <form id="popupLeadForm"
+        action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DgL00000O0QrA"
+        method="POST">
+        <input type="hidden" name="oid" value="00DgL00000O0QrA">
+        <input type="hidden" name="retURL" value="https://dropshipping.sovely.in/?lead=success">
+        <input type="hidden" name="lead_source" value="Web">
+        <div class="form-row">
+          <label>
+            First Name *
+            <input maxlength="40" name="first_name" type="text" placeholder="First name" required>
+          </label>
+          <label>
+            Last Name *
+            <input maxlength="80" name="last_name" type="text" placeholder="Last name" required>
+          </label>
+        </div>
+        <label>
+          Mobile Number *
+          <input maxlength="40" name="mobile" type="tel" placeholder="10-digit mobile number" pattern="[6-9][0-9]{9}"
+            required>
+        </label>
+        <label>
+          Email Address *
+          <input maxlength="80" name="email" type="email" placeholder="you@example.com" required>
+        </label>
+        <label class="checkbox-field">
+          <input name="00NgL00003SZKIL" type="checkbox" value="1">
+          <span>Are you already doing dropshipping?</span>
+        </label>
+        <label>
+          Do you have GST? *
+          <select name="00NgL00004sgMkX" required>
+            <option value="">Select</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </label>
+        <label>
+          What would you like help with?
+          <textarea name="question" rows="3" placeholder="Tell us your question..."></textarea>
+        </label>
+        <button class="btn btn-primary btn-lg form-submit" type="submit">
+          Submit & Get Started →
+        </button>
+        <p class="form-note">
+          Your information is safe and will only be used
+          to contact you about Sovely.
+        </p>
+      </form>
+    </div>
   </div>
-
-</div>
-<!-- =========================================
+  <!-- =========================================
      THANK YOU POPUP
 ========================================= -->
 
-<div
-  class="thank-modal"
-  id="thankModal"
-  aria-hidden="true"
->
-
-  <div class="thank-modal-backdrop"></div>
-
-  <div class="thank-modal-box">
-
-    <!-- CLOSE BUTTON ONLY HERE -->
-
-    <button
-      type="button"
-      class="thank-modal-close"
-      id="closeThankModal"
-      aria-label="Close"
-    >
-      ×
-    </button>
-
-
-    <div class="success-icon">
-      ✓
+  <div class="thank-modal" id="thankModal" aria-hidden="true">
+    <div class="thank-modal-backdrop"></div>
+    <div class="thank-modal-box">
+      <!-- CLOSE BUTTON ONLY HERE -->
+      <button type="button" class="thank-modal-close" id="closeThankModal" aria-label="Close">
+        ×
+      </button>
+      <div class="success-icon">✓</div>
+      <h2>Thank You!</h2>
+      <p>Your details have been submitted successfully.
+        Our Sovely team will contact you shortly.
+      </p>
+      <a class="btn btn-primary btn-lg" href="https://chat.whatsapp.com/HLG8bwkeZig5V2aBcK9lIi" target="_blank"         rel="noopener">
+        💬 Join WhatsApp Community
+      </a>
+      <button type="button" class="text-button" id="closeThankModalBottom">
+        Close
+      </button>
     </div>
-
-
-    <h2>
-      Thank You!
-    </h2>
-
-
-    <p>
-      Your details have been submitted successfully.
-      Our Sovely team will contact you shortly.
-    </p>
-
-
-    <a
-      class="btn btn-primary btn-lg"
-      href="https://chat.whatsapp.com/HLG8bwkeZig5V2aBcK9lIi"
-      target="_blank"
-      rel="noopener"
-    >
-      💬 Join WhatsApp Community
-    </a>
-
-
-    <button
-      type="button"
-      class="text-button"
-      id="closeThankModalBottom"
-    >
-      Close
-    </button>
-
   </div>
-
-</div>
   <script src="js/script.js"></script>
 </body>
 
