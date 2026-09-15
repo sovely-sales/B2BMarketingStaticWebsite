@@ -81,10 +81,10 @@ revealItems.forEach(element => {
 
 const leadModal =
   document.getElementById("leadModal");
-
 const popupLeadForm =
   document.getElementById("popupLeadForm");
-
+const closeLeadModal =
+  document.getElementById("closeLeadModal");
 
 /* =========================================
    THANK YOU POPUP
@@ -120,7 +120,25 @@ function openLeadModal() {
   document.body.style.overflow = "hidden";
 
 }
+/* =========================================
+   CLOSE LEAD FORM
+========================================= */
 
+closeLeadModal?.addEventListener(
+  "click",
+  () => {
+
+    leadModal.classList.remove("show");
+
+    leadModal.setAttribute(
+      "aria-hidden",
+      "true"
+    );
+
+    document.body.style.overflow = "";
+
+  }
+);
 
 /* =========================================
    OPEN THANK YOU
