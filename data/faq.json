@@ -1,0 +1,554 @@
+{
+  "version": "2026-11-12-uat",
+  "_howToEdit": "Change prices and charges ONLY in 'plans' and 'charges'. FAQ answers use {placeholders} like {basic.price} or {charges.cod} that fill in automatically. Keep this file valid JSON (check at jsonlint.com). Bump 'version' after any edit so cached AI answers refresh.",
+  "contact": {
+    "whatsapp": "+91 93532 15891",
+    "whatsappUrl": "https://wa.me/919353215891?text=Hi%20Sovely%2C%20I%20have%20a%20question%20about%20dropshipping."
+  },
+  "facts": {
+    "products": "12,000+",
+    "categories": "30+",
+    "couriers": "20+"
+  },
+  "plans": {
+    "basic": {
+      "name": "Basic Plan",
+      "price": "₹4,999",
+      "regularPrice": "₹7,999",
+      "features": "product catalogue access, order processing panel, ₹50 flat delivery, COD and RTO management, dedicated support and B2B pricing"
+    },
+    "amazon": {
+      "name": "Amazon Plan",
+      "price": "₹13,999",
+      "regularPrice": "₹17,999",
+      "features": "everything in Basic, plus GST registration support, Amazon account launch, Marketplace + Bazar + B2B, 500+ SEO product listings, Amazon ads and SEO training, FBA and account health support, and a dedicated account manager"
+    }
+  },
+  "charges": {
+    "delivery": "₹50",
+    "cod": "₹35",
+    "rto": "₹50"
+  },
+  "faqs": [
+    {
+      "id": "plans",
+      "q": "What plans do you have and what do they cost?",
+      "a": "There are two plans, both a one-time platform fee:\n• {basic.name}: {basic.price} (regular {basic.regularPrice}). Includes {basic.features}.\n• {amazon.name}: {amazon.price} (regular {amazon.regularPrice}). Includes {amazon.features}.",
+      "keywords": [
+        "plan",
+        "plan cost",
+        "cost",
+        "pricing",
+        "package",
+        "join cost",
+        "start cost",
+        "basic amazon",
+        "subscription cost"
+      ]
+    },
+    {
+      "id": "basic-plan",
+      "q": "What is in the Basic plan?",
+      "a": "The {basic.name} is {basic.price} (regular {basic.regularPrice}), a one-time fee. It includes {basic.features}.",
+      "keywords": [
+        "basic",
+        "basic plan",
+        "basic cost",
+        "cheap plan",
+        "starter plan",
+        "basic plan cost",
+        "basic plan include",
+        "included basic"
+      ]
+    },
+    {
+      "id": "amazon-plan",
+      "q": "What is in the Amazon plan?",
+      "a": "The {amazon.name} is {amazon.price} (regular {amazon.regularPrice}), a one-time fee. It includes {amazon.features}.",
+      "keywords": [
+        "amazon plan",
+        "amazon cost",
+        "amazon package",
+        "fba",
+        "amazon account",
+        "gst registration",
+        "amazon plan cost",
+        "amazon plan include"
+      ]
+    },
+    {
+      "id": "monthly-fee",
+      "q": "Is there any registration fee or monthly subscription?",
+      "a": "There's no monthly subscription. You pay a one-time platform access fee ({basic.name} {basic.price} or {amazon.name} {amazon.price}), which also gets you discounted rates. Per-order product, shipping and COD charges apply depending on the order.",
+      "keywords": [
+        "monthly",
+        "monthly fee",
+        "subscription",
+        "registration fee",
+        "recurring",
+        "every month",
+        "yearly",
+        "renewal",
+        "hidden charge",
+        "one time"
+      ],
+      "not": [
+        "earn",
+        "profit",
+        "margin",
+        "income",
+        "sale",
+        "order"
+      ]
+    },
+    {
+      "id": "what-is",
+      "q": "What is Sovely Dropshipping and how does it work?",
+      "a": "Sovely helps you run an online store without buying or storing stock. You pick products from our catalogue, list them on your store or social channels, and forward customer orders to us. We pack, ship and deliver to your customer with tracking, so you can focus on marketing and sales.",
+      "keywords": [
+        "dropshipping",
+        "how work",
+        "how does it work",
+        "process",
+        "steps",
+        "explain",
+        "about",
+        "what do you do",
+        "what is this"
+      ]
+    },
+    {
+      "id": "beginners",
+      "q": "Is Sovely suitable for beginners and small sellers?",
+      "a": "Yes. You don't need to buy stock in bulk, run a warehouse or handle packing and shipping. You can start with a few products, test demand and grow from there.",
+      "keywords": [
+        "beginner",
+        "new seller",
+        "small seller",
+        "first time",
+        "student",
+        "no experience",
+        "fresher",
+        "start small"
+      ]
+    },
+    {
+      "id": "inventory",
+      "q": "Do I need to buy inventory or maintain stock?",
+      "a": "No. You don't buy or store inventory in advance. Products are sourced and fulfilled when your customer orders, so you avoid stock investment and warehouse costs.",
+      "keywords": [
+        "inventory",
+        "stock",
+        "warehouse",
+        "godown",
+        "bulk",
+        "investment",
+        "upfront"
+      ]
+    },
+    {
+      "id": "products",
+      "q": "How many products can I sell?",
+      "a": "You get access to {facts.products} ready-to-sell products across {facts.categories} categories, so you can test different products and expand based on demand.",
+      "keywords": [
+        "how many product",
+        "product count",
+        "number product",
+        "catalogue",
+        "catalog",
+        "product range",
+        "products"
+      ]
+    },
+    {
+      "id": "categories",
+      "q": "What product categories are available?",
+      "a": "We have {facts.categories} categories, including Health and Beauty, Fashion and Accessories, Home and Kitchen, Electronics and Gadgets, Car Accessories, Fitness, Toys and Games, Travel Accessories, Home Decor and Daily Use products.",
+      "keywords": [
+        "category",
+        "categories",
+        "type product",
+        "kind product",
+        "fashion",
+        "electronics",
+        "kitchen",
+        "beauty",
+        "toys",
+        "what sell"
+      ]
+    },
+    {
+      "id": "increase-sales",
+      "q": "How does Sovely help me increase my sales?",
+      "a": "You get a wide range of ready-to-sell products, fulfilment support and PAN India delivery, so your time goes into promoting products and finding customers instead of logistics.",
+      "keywords": [
+        "increase sales",
+        "more sales",
+        "grow sales",
+        "boost sales",
+        "sell more"
+      ]
+    },
+    {
+      "id": "profit-before",
+      "q": "Can I see my profit before placing an order?",
+      "a": "Yes. Before confirming an order you can work out your profit: your customer's selling price minus the product cost, shipping, COD and any other charges.",
+      "keywords": [
+        "profit before",
+        "calculate profit",
+        "see profit before",
+        "profit calculation",
+        "estimate profit",
+        "check profit"
+      ]
+    },
+    {
+      "id": "margins",
+      "q": "How much profit or margin can I earn?",
+      "a": "You set your own selling price and keep the difference between that price and the product and fulfilment costs. Sovely's competitive product pricing helps your margin, and you don't spend on inventory or a warehouse. Your exact margin depends on the product and the price you choose.",
+      "keywords": [
+        "margin",
+        "how much profit",
+        "how much earn",
+        "earning",
+        "income",
+        "commission",
+        "profit margin",
+        "earn monthly",
+        "how much earn monthly"
+      ]
+    },
+    {
+      "id": "selling-price",
+      "q": "Can I choose my own selling price?",
+      "a": "Yes. You decide your selling price based on your audience, competition and the margin you want. You earn the difference between your price and the product and fulfilment costs.",
+      "keywords": [
+        "selling price",
+        "own price",
+        "set price",
+        "decide price",
+        "mrp",
+        "choose price"
+      ]
+    },
+    {
+      "id": "cod",
+      "q": "Do you provide COD (Cash on Delivery)?",
+      "a": "Yes, COD is supported, so your customers can pay when the order arrives. The COD charge is {charges.cod} per order, and availability depends on the courier, delivery location and order eligibility.",
+      "keywords": [
+        "cod",
+        "cash on delivery",
+        "cod available",
+        "cod charge",
+        "pay on delivery"
+      ]
+    },
+    {
+      "id": "cod-collection",
+      "q": "Who collects COD payments from customers?",
+      "a": "The delivery partner collects the cash at delivery. The amount then goes through Sovely's settlement process, and you can track eligible payments and settlements in your portal.",
+      "keywords": [
+        "collect cod",
+        "cod collect",
+        "cod money",
+        "cod payment",
+        "cod settlement",
+        "cash collect"
+      ]
+    },
+    {
+      "id": "payout",
+      "q": "How and when do I get my profit?",
+      "a": "Your profit is your selling price minus the product cost, shipping, COD fees, taxes and other charges. After the order is delivered and the payment is reconciled, your earnings are added to your portal wallet, and you can redeem them anytime.",
+      "keywords": [
+        "get profit",
+        "receive profit",
+        "payout",
+        "withdraw",
+        "wallet",
+        "transfer profit",
+        "when paid",
+        "settlement",
+        "get money",
+        "receive money",
+        "payment",
+        "when profit",
+        "profit transfer",
+        "receive profit",
+        "profit credited",
+        "profit account",
+        "bank transfer",
+        "payment reach",
+        "payment receive",
+        "how payment",
+        "payment come",
+        "money reach"
+      ]
+    },
+    {
+      "id": "tracking",
+      "q": "Can I track my orders?",
+      "a": "Yes. You can follow every order's processing, dispatch, delivery and return status through the order management and tracking tools, and a same-day tracking ID is supported.",
+      "keywords": [
+        "track",
+        "tracking",
+        "order status",
+        "where order",
+        "track order"
+      ]
+    },
+    {
+      "id": "white-label",
+      "q": "Do you ship to my customers without your branding?",
+      "a": "Yes. Orders ship directly to your customers, and we aim for a white-label experience so you can build your own brand.",
+      "keywords": [
+        "branding",
+        "brand",
+        "white label",
+        "my brand",
+        "own brand",
+        "logo",
+        "sovely name",
+        "invoice name"
+      ]
+    },
+    {
+      "id": "packing-returns",
+      "q": "Who handles packing, shipping and returns?",
+      "a": "Sovely handles packing, dispatch and coordination with delivery partners. Eligible returns and RTO shipments follow our return and shipping policies.",
+      "keywords": [
+        "packing",
+        "packaging",
+        "who ship",
+        "who pack",
+        "handle return",
+        "return policy",
+        "returns"
+      ]
+    },
+    {
+      "id": "delivery",
+      "q": "How does delivery work and what does it cost?",
+      "a": "We deliver PAN India through {facts.couriers} courier partners. Forward delivery is listed at {charges.delivery} flat, though the final shipping charge can depend on weight, courier and location. Delivery timelines vary by location.",
+      "keywords": [
+        "delivery",
+        "shipping",
+        "courier",
+        "delivery charge",
+        "shipping charge",
+        "ship cost",
+        "delivery cost",
+        "deliver"
+      ]
+    },
+    {
+      "id": "dispatch",
+      "q": "How long does it take to dispatch an order?",
+      "a": "Dispatch time depends on product availability, order confirmation and warehouse processing, so we can't promise a fixed number of days. Our process is built for timely dispatch.",
+      "keywords": [
+        "dispatch",
+        "how long",
+        "how many days",
+        "delivery time",
+        "when deliver",
+        "days",
+        "time take",
+        "fast"
+      ]
+    },
+    {
+      "id": "rto",
+      "q": "What are your RTO charges?",
+      "a": "RTO (Return to Origin) is when an order can't be delivered and goes back to the warehouse. The listed RTO cost is {charges.rto}, but the actual charge can vary with shipment weight, courier and delivery location.",
+      "keywords": [
+        "rto",
+        "rto charge",
+        "return to origin",
+        "undelivered",
+        "return charge"
+      ]
+    },
+    {
+      "id": "refused",
+      "q": "What happens if a customer refuses the order?",
+      "a": "If a customer refuses or isn't available, the courier may raise an NDR (Non-Delivery Report) or start the RTO process. Where possible, a reattempt or address correction can be arranged. Charges may apply.",
+      "keywords": [
+        "refuse",
+        "refused",
+        "reject",
+        "not accept",
+        "customer cancel",
+        "ndr",
+        "not available"
+      ]
+    },
+    {
+      "id": "damaged",
+      "q": "What if a customer receives a damaged or wrong product?",
+      "a": "Raise a return or replacement request through Sovely support. It's reviewed under our product return and replacement policy.",
+      "keywords": [
+        "damaged",
+        "damage",
+        "defective",
+        "broken",
+        "wrong product",
+        "replacement",
+        "faulty",
+        "quality"
+      ]
+    },
+    {
+      "id": "shopify",
+      "q": "Can I sell through my Shopify store?",
+      "a": "Yes. You can list Sovely products on your Shopify store and use our fulfilment. Integration and order sync depend on the available Shopify integration setup.",
+      "keywords": [
+        "shopify",
+        "website",
+        "own website",
+        "own store",
+        "online store",
+        "woocommerce"
+      ]
+    },
+    {
+      "id": "social",
+      "q": "Can I sell on Instagram, Facebook and WhatsApp?",
+      "a": "Yes. You can promote your products on Instagram, Facebook and WhatsApp to bring in customers and enquiries.",
+      "keywords": [
+        "instagram",
+        "facebook",
+        "whatsapp sell",
+        "social media",
+        "insta",
+        "reels",
+        "meta"
+      ]
+    },
+    {
+      "id": "amazon",
+      "q": "Can I sell on Amazon?",
+      "a": "Yes. The {amazon.name} ({amazon.price}) covers Amazon account launch, GST registration support, 500+ SEO listings, ads and SEO training, FBA support and a dedicated account manager.",
+      "keywords": [
+        "amazon",
+        "sell amazon",
+        "marketplace"
+      ],
+      "not": [
+        "flipkart",
+        "meesho",
+        "myntra",
+        "jiomart"
+      ]
+    },
+    {
+      "id": "technical",
+      "q": "Do I need technical knowledge?",
+      "a": "No. You don't need technical skills or ecommerce experience. Sovely simplifies product selection and fulfilment so you can focus on marketing.",
+      "keywords": [
+        "technical",
+        "coding",
+        "tech knowledge",
+        "skills",
+        "computer knowledge",
+        "difficult",
+        "easy",
+        "coding skills",
+        "skill"
+      ]
+    },
+    {
+      "id": "pan-india",
+      "q": "Can I sell across India?",
+      "a": "Yes. We deliver PAN India through our courier network, subject to serviceability and product availability at your customer's location.",
+      "keywords": [
+        "across india",
+        "all india",
+        "pan india",
+        "every city",
+        "pincode",
+        "village",
+        "my city",
+        "serviceable",
+        "deliver india",
+        "deliver everywhere",
+        "deliver city"
+      ]
+    },
+    {
+      "id": "support",
+      "q": "Does Sovely provide support to sellers?",
+      "a": "Yes. Our team helps with using the platform, choosing products, fulfilment and day-to-day questions. You can reach them on WhatsApp at {contact.whatsapp}.",
+      "keywords": [
+        "support",
+        "help",
+        "contact",
+        "customer care",
+        "talk",
+        "call",
+        "phone number",
+        "number",
+        "reach"
+      ],
+      "not": [
+        "payment",
+        "profit",
+        "money",
+        "payout"
+      ]
+    },
+    {
+      "id": "scale",
+      "q": "Can I scale my business with Sovely?",
+      "a": "Yes. Start with a few products and add more as you grow. With {facts.products} products across {facts.categories} categories you can test segments and find winning products without holding stock.",
+      "keywords": [
+        "scale",
+        "grow business",
+        "expand",
+        "big",
+        "growth"
+      ]
+    },
+    {
+      "id": "why",
+      "q": "Why choose Sovely over traditional ecommerce?",
+      "a": "Traditional ecommerce needs money for stock, storage, packing and shipping. With Sovely you start without bulk inventory, get {facts.products} products across {facts.categories} categories, offer COD where supported, ship PAN India and spend your time on marketing and growth.",
+      "keywords": [
+        "why sovely",
+        "why choose",
+        "benefit",
+        "advantage",
+        "better",
+        "traditional",
+        "difference",
+        "why choose",
+        "choose",
+        "why should"
+      ],
+      "not": [
+        "data",
+        "scam",
+        "fraud",
+        "privacy",
+        "safe"
+      ]
+    },
+    {
+      "id": "signup",
+      "q": "How do I sign up or get started?",
+      "a": "Fill in the Get Started form on this page and the team will contact you, or message us on WhatsApp at {contact.whatsapp}.",
+      "keywords": [
+        "sign up",
+        "signup",
+        "register",
+        "join",
+        "get started",
+        "start",
+        "apply",
+        "enroll",
+        "account create",
+        "onboard",
+        "buy plan"
+      ]
+    }
+  ]
+}
