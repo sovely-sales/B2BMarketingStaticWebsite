@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-12-uat",
+  "version": "2026-11-15",
   "_howToEdit": "Change prices and charges ONLY in 'plans' and 'charges'. FAQ answers use {placeholders} like {basic.price} or {charges.cod} that fill in automatically. Keep this file valid JSON (check at jsonlint.com). Bump 'version' after any edit so cached AI answers refresh.",
   "contact": {
     "whatsapp": "+91 93532 15891",
@@ -15,13 +15,29 @@
       "name": "Basic Plan",
       "price": "₹4,999",
       "regularPrice": "₹7,999",
-      "features": "product catalogue access, order processing panel, ₹50 flat delivery, COD and RTO management, dedicated support and B2B pricing"
+      "features": "product catalogue access, order processing panel, ₹50 flat delivery, COD and RTO management, dedicated support and B2B pricing",
+      "bestFor": "new or existing sellers"
     },
     "amazon": {
       "name": "Amazon Plan",
       "price": "₹13,999",
       "regularPrice": "₹17,999",
-      "features": "everything in Basic, plus GST registration support, Amazon account launch, Marketplace + Bazar + B2B, 500+ SEO product listings, Amazon ads and SEO training, FBA and account health support, and a dedicated account manager"
+      "features": "everything in Basic, plus GST registration support, Amazon account launch, Marketplace + Bazar + B2B, 500+ SEO product listings, Amazon ads and SEO training, FBA and account health support, and a dedicated account manager",
+      "bestFor": "Amazon sellers"
+    },
+    "shopify": {
+      "name": "Shopify Plan",
+      "price": "₹14,999",
+      "features": "everything in the Basic Plan, plus full Shopify store setup and launch from scratch, 4,000+ product listings across 25+ categories, Facebook and Instagram pages integrated with Shopify, live Facebook ad campaign creation and management, Facebook ads training, and a dedicated account manager from day one",
+      "bestFor": "sellers building their own brand on social media"
+    },
+    "combo": {
+      "name": "Combo Plan",
+      "price": "₹17,999",
+      "worth": "₹27,998",
+      "saving": "₹9,999",
+      "features": "the full Amazon Plan (GST, listings, ads/SEO training and FBA support) and the full Shopify Plan (branded store, 4,000+ listings and social ads), one dedicated account manager for both platforms, Facebook and Instagram pages with live ad campaigns, and complete legal and GST compliance handled for you, all with zero inventory",
+      "bestFor": "sellers who want both Amazon and their own Shopify store"
     }
   },
   "charges": {
@@ -33,7 +49,7 @@
     {
       "id": "plans",
       "q": "What plans do you have and what do they cost?",
-      "a": "There are two plans, both a one-time platform fee:\n• {basic.name}: {basic.price} (regular {basic.regularPrice}). Includes {basic.features}.\n• {amazon.name}: {amazon.price} (regular {amazon.regularPrice}). Includes {amazon.features}.",
+      "a": "There are four plans, each a one-time platform fee:\n• {basic.name}: {basic.price} (regular {basic.regularPrice}). Best for {basic.bestFor}.\n• {amazon.name}: {amazon.price} (regular {amazon.regularPrice}). Best for {amazon.bestFor}.\n• {shopify.name}: {shopify.price}. Best for {shopify.bestFor}.\n• {combo.name}: {combo.price} (worth {combo.worth}, you save {combo.saving}). Best for {combo.bestFor}.\nAsk me about any plan to see what's included.",
       "keywords": [
         "plan",
         "plan cost",
@@ -77,9 +93,55 @@
       ]
     },
     {
+      "id": "shopify-plan",
+      "q": "What is in the Shopify plan?",
+      "a": "The {shopify.name} is {shopify.price}, a one-time fee. It includes {shopify.features}.",
+      "keywords": [
+        "shopify plan",
+        "shopify plan cost",
+        "shopify package",
+        "shopify store setup",
+        "build shopify store",
+        "shopify store cost",
+        "store setup"
+      ]
+    },
+    {
+      "id": "combo-plan",
+      "q": "What is the Combo plan?",
+      "a": "The {combo.name} is a special offer at {combo.price} (worth {combo.worth}, you save {combo.saving}). It includes {combo.features}.",
+      "keywords": [
+        "combo",
+        "combo plan",
+        "combo offer",
+        "combo cost",
+        "amazon shopify",
+        "both platform",
+        "special offer",
+        "offer"
+      ]
+    },
+    {
+      "id": "compare-plans",
+      "q": "Which plan is right for me?",
+      "a": "It depends on where you want to sell:\n• {basic.name} ({basic.price}): {basic.bestFor}.\n• {amazon.name} ({amazon.price}): {amazon.bestFor}.\n• {shopify.name} ({shopify.price}): {shopify.bestFor}.\n• {combo.name} ({combo.price}): {combo.bestFor}.\nYou can compare them in the plans table on this page, or message us on WhatsApp at {contact.whatsapp} for advice.",
+      "keywords": [
+        "which plan",
+        "best plan",
+        "right plan",
+        "compare plan",
+        "plan difference",
+        "difference plan",
+        "suggest plan",
+        "recommend plan",
+        "plan should choose",
+        "choose plan"
+      ]
+    },
+    {
       "id": "monthly-fee",
       "q": "Is there any registration fee or monthly subscription?",
-      "a": "There's no monthly subscription. You pay a one-time platform access fee ({basic.name} {basic.price} or {amazon.name} {amazon.price}), which also gets you discounted rates. Per-order product, shipping and COD charges apply depending on the order.",
+      "a": "There's no monthly subscription. You pay a one-time platform access fee, starting at {basic.price} for the {basic.name}, which also gets you discounted rates. Per-order product, shipping and COD charges apply depending on the order.",
       "keywords": [
         "monthly",
         "monthly fee",
@@ -400,7 +462,7 @@
     {
       "id": "shopify",
       "q": "Can I sell through my Shopify store?",
-      "a": "Yes. You can list Sovely products on your Shopify store and use our fulfilment. Integration and order sync depend on the available Shopify integration setup.",
+      "a": "Yes. You can list Sovely products on your own Shopify store and use our fulfilment. If you want us to build it for you, the {shopify.name} ({shopify.price}) includes full Shopify store setup, 4,000+ listings and Facebook/Instagram ads.",
       "keywords": [
         "shopify",
         "website",
@@ -427,7 +489,7 @@
     {
       "id": "amazon",
       "q": "Can I sell on Amazon?",
-      "a": "Yes. The {amazon.name} ({amazon.price}) covers Amazon account launch, GST registration support, 500+ SEO listings, ads and SEO training, FBA support and a dedicated account manager.",
+      "a": "Yes. The {amazon.name} ({amazon.price}) covers Amazon account launch, GST registration support, 500+ SEO listings, ads and SEO training, FBA support and a dedicated account manager. To sell on both Amazon and your own Shopify store, the {combo.name} is {combo.price}.",
       "keywords": [
         "amazon",
         "sell amazon",
