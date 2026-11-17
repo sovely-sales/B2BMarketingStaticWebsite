@@ -1,190 +1,88 @@
 {
-  "version": "2026-11-15",
-  "_howToEdit": "Change prices and charges ONLY in 'plans' and 'charges'. FAQ answers use {placeholders} like {basic.price} or {charges.cod} that fill in automatically. Keep this file valid JSON (check at jsonlint.com). Bump 'version' after any edit so cached AI answers refresh.",
+  "version": "2026-11-17",
+  "_howToEdit": "Change prices and charges ONLY in 'plans' and 'charges'. FAQ answers use {placeholders} like {basic.price} or {charges.delivery} that fill in automatically. Keep this file valid JSON (check at jsonlint.com). Bump 'version' after any edit so cached AI answers refresh. Source: 'Sovely Dropshipping – Complete FAQ' (16 Nov 2026).",
   "contact": {
     "whatsapp": "+91 93532 15891",
-    "whatsappUrl": "https://wa.me/919353215891?text=Hi%20Sovely%2C%20I%20have%20a%20question%20about%20dropshipping."
+    "whatsappUrl": "https://wa.me/919353215891?text=Hi%20Sovely%2C%20I%20have%20a%20question%20about%20dropshipping.",
+    "phone": "9353215891",
+    "amazonTeam": "7054 91 3357",
+    "email": "support@infinitestore.in",
+    "website": "www.sovely.in",
+    "address": "Skanda, Balagere Road, Bengaluru – 560087, Karnataka"
   },
   "facts": {
-    "products": "12,000+",
-    "categories": "30+",
-    "couriers": "20+"
+    "products": "10,000+",
+    "categories": "25+",
+    "couriers": "20+",
+    "courierNames": "Bluedart, DTDC, Ekart, Amazon and more",
+    "minMargin": "100%+",
+    "returnWindow": "48 hours",
+    "refundDays": "7 days"
   },
   "plans": {
     "basic": {
       "name": "Basic Plan",
       "price": "₹4,999",
-      "regularPrice": "₹7,999",
-      "features": "product catalogue access, order processing panel, ₹50 flat delivery, COD and RTO management, dedicated support and B2B pricing",
-      "bestFor": "new or existing sellers"
+      "regularPrice": "₹9,999",
+      "bestFor": "existing online businesses that want products plus operations",
+      "features": "access to all 10,000+ products across 25+ categories, the order processing panel, a same-day tracking ID for every order, COD and RTO management, same-day tracking updates for your customers, and a dedicated support team"
     },
     "amazon": {
       "name": "Amazon Plan",
-      "price": "₹13,999",
+      "price": "₹12,999",
       "regularPrice": "₹17,999",
-      "features": "everything in Basic, plus GST registration support, Amazon account launch, Marketplace + Bazar + B2B, 500+ SEO product listings, Amazon ads and SEO training, FBA and account health support, and a dedicated account manager",
-      "bestFor": "Amazon sellers"
+      "gstPrice": "₹10,000",
+      "gstDiscount": "₹3,000",
+      "bestFor": "a complete Amazon launch",
+      "features": "everything in the Basic Plan, plus GST registration and legal compliance management, Amazon account launch with category approval and GTIN exception, 500+ SEO-optimised listings, Ad, SEO and AI-prompt training, account health check tracking, Amazon Bazar and B2B account launch, full FBA support, lifetime support and a dedicated account manager"
     },
     "shopify": {
       "name": "Shopify Plan",
       "price": "₹14,999",
-      "features": "everything in the Basic Plan, plus full Shopify store setup and launch from scratch, 4,000+ product listings across 25+ categories, Facebook and Instagram pages integrated with Shopify, live Facebook ad campaign creation and management, Facebook ads training, and a dedicated account manager from day one",
-      "bestFor": "sellers building their own brand on social media"
+      "regularPrice": "₹19,999",
+      "bestFor": "your own branded store plus social commerce",
+      "features": "everything in the Basic Plan, plus a Shopify store launched from scratch, 4,000+ product listings across 25+ categories, product listing training, Facebook and Instagram page creation, Shopify and Facebook integration, Facebook ad campaign creation and management, social-commerce sales support, and a dedicated account manager from day one"
     },
     "combo": {
-      "name": "Combo Plan",
+      "name": "Amazon + Shopify Combo",
       "price": "₹17,999",
       "worth": "₹27,998",
       "saving": "₹9,999",
-      "features": "the full Amazon Plan (GST, listings, ads/SEO training and FBA support) and the full Shopify Plan (branded store, 4,000+ listings and social ads), one dedicated account manager for both platforms, Facebook and Instagram pages with live ad campaigns, and complete legal and GST compliance handled for you, all with zero inventory",
-      "bestFor": "sellers who want both Amazon and their own Shopify store"
+      "bestFor": "two stores (Amazon and Shopify) with one team",
+      "features": "every feature of the Amazon and Shopify plans, with one dedicated team and account manager covering both platforms"
     }
   },
   "charges": {
     "delivery": "₹50",
-    "cod": "₹35",
-    "rto": "₹50"
+    "rtoNote": "RTO charges depend on shipment weight, courier partner, delivery location and the shipping policy",
+    "rejection": "2 times the original shipping charge (forward plus reverse)"
   },
   "faqs": [
     {
-      "id": "plans",
-      "q": "What plans do you have and what do they cost?",
-      "a": "There are four plans, each a one-time platform fee:\n• {basic.name}: {basic.price} (regular {basic.regularPrice}). Best for {basic.bestFor}.\n• {amazon.name}: {amazon.price} (regular {amazon.regularPrice}). Best for {amazon.bestFor}.\n• {shopify.name}: {shopify.price}. Best for {shopify.bestFor}.\n• {combo.name}: {combo.price} (worth {combo.worth}, you save {combo.saving}). Best for {combo.bestFor}.\nAsk me about any plan to see what's included.",
-      "keywords": [
-        "plan",
-        "plan cost",
-        "cost",
-        "pricing",
-        "package",
-        "join cost",
-        "start cost",
-        "basic amazon",
-        "subscription cost"
-      ]
-    },
-    {
-      "id": "basic-plan",
-      "q": "What is in the Basic plan?",
-      "a": "The {basic.name} is {basic.price} (regular {basic.regularPrice}), a one-time fee. It includes {basic.features}.",
-      "keywords": [
-        "basic",
-        "basic plan",
-        "basic cost",
-        "cheap plan",
-        "starter plan",
-        "basic plan cost",
-        "basic plan include",
-        "included basic"
-      ]
-    },
-    {
-      "id": "amazon-plan",
-      "q": "What is in the Amazon plan?",
-      "a": "The {amazon.name} is {amazon.price} (regular {amazon.regularPrice}), a one-time fee. It includes {amazon.features}.",
-      "keywords": [
-        "amazon plan",
-        "amazon cost",
-        "amazon package",
-        "fba",
-        "amazon account",
-        "gst registration",
-        "amazon plan cost",
-        "amazon plan include"
-      ]
-    },
-    {
-      "id": "shopify-plan",
-      "q": "What is in the Shopify plan?",
-      "a": "The {shopify.name} is {shopify.price}, a one-time fee. It includes {shopify.features}.",
-      "keywords": [
-        "shopify plan",
-        "shopify plan cost",
-        "shopify package",
-        "shopify store setup",
-        "build shopify store",
-        "shopify store cost",
-        "store setup"
-      ]
-    },
-    {
-      "id": "combo-plan",
-      "q": "What is the Combo plan?",
-      "a": "The {combo.name} is a special offer at {combo.price} (worth {combo.worth}, you save {combo.saving}). It includes {combo.features}.",
-      "keywords": [
-        "combo",
-        "combo plan",
-        "combo offer",
-        "combo cost",
-        "amazon shopify",
-        "both platform",
-        "special offer",
-        "offer"
-      ]
-    },
-    {
-      "id": "compare-plans",
-      "q": "Which plan is right for me?",
-      "a": "It depends on where you want to sell:\n• {basic.name} ({basic.price}): {basic.bestFor}.\n• {amazon.name} ({amazon.price}): {amazon.bestFor}.\n• {shopify.name} ({shopify.price}): {shopify.bestFor}.\n• {combo.name} ({combo.price}): {combo.bestFor}.\nYou can compare them in the plans table on this page, or message us on WhatsApp at {contact.whatsapp} for advice.",
-      "keywords": [
-        "which plan",
-        "best plan",
-        "right plan",
-        "compare plan",
-        "plan difference",
-        "difference plan",
-        "suggest plan",
-        "recommend plan",
-        "plan should choose",
-        "choose plan"
-      ]
-    },
-    {
-      "id": "monthly-fee",
-      "q": "Is there any registration fee or monthly subscription?",
-      "a": "There's no monthly subscription. You pay a one-time platform access fee, starting at {basic.price} for the {basic.name}, which also gets you discounted rates. Per-order product, shipping and COD charges apply depending on the order.",
-      "keywords": [
-        "monthly",
-        "monthly fee",
-        "subscription",
-        "registration fee",
-        "recurring",
-        "every month",
-        "yearly",
-        "renewal",
-        "hidden charge",
-        "one time"
-      ],
-      "not": [
-        "earn",
-        "profit",
-        "margin",
-        "income",
-        "sale",
-        "order"
-      ]
-    },
-    {
       "id": "what-is",
+      "section": "About Sovely Dropshipping",
       "q": "What is Sovely Dropshipping and how does it work?",
-      "a": "Sovely helps you run an online store without buying or storing stock. You pick products from our catalogue, list them on your store or social channels, and forward customer orders to us. We pack, ship and deliver to your customer with tracking, so you can focus on marketing and sales.",
+      "a": "Sovely Dropshipping is an ecommerce dropshipping platform that helps entrepreneurs start and grow an online business without buying or maintaining inventory. You choose products from the catalogue, list them on your store or selling channel, and receive customer orders. Sovely supports fulfilment (packing, dispatch and delivery coordination) so you can focus on marketing and customers.",
       "keywords": [
-        "dropshipping",
+        "what is sovely",
         "how work",
         "how does it work",
+        "what is dropshipping",
+        "dropshipping",
         "process",
-        "steps",
         "explain",
         "about",
-        "what do you do",
-        "what is this"
+        "what do you do"
       ]
     },
     {
       "id": "beginners",
-      "q": "Is Sovely suitable for beginners and small sellers?",
-      "a": "Yes. You don't need to buy stock in bulk, run a warehouse or handle packing and shipping. You can start with a few products, test demand and grow from there.",
+      "section": "About Sovely Dropshipping",
+      "q": "Who is Sovely Dropshipping for?",
+      "a": "Beginners, aspiring entrepreneurs, small sellers and established ecommerce businesses. You do not need to buy in bulk, run a warehouse, or manage your own packing and shipping. You can start with a small product selection, test demand, and expand gradually.",
       "keywords": [
         "beginner",
+        "who is it for",
         "new seller",
         "small seller",
         "first time",
@@ -195,9 +93,26 @@
       ]
     },
     {
+      "id": "technical",
+      "section": "About Sovely Dropshipping",
+      "q": "Do I need technical knowledge or ecommerce experience?",
+      "a": "No. Sovely simplifies product selection and fulfilment so you can concentrate on marketing. Higher plans also include hands-on training: product listing training (Shopify), and Ads, SEO and AI-prompt training (Amazon).",
+      "keywords": [
+        "technical",
+        "coding",
+        "tech knowledge",
+        "skill",
+        "experience",
+        "computer knowledge",
+        "difficult",
+        "easy"
+      ]
+    },
+    {
       "id": "inventory",
-      "q": "Do I need to buy inventory or maintain stock?",
-      "a": "No. You don't buy or store inventory in advance. Products are sourced and fulfilled when your customer orders, so you avoid stock investment and warehouse costs.",
+      "section": "About Sovely Dropshipping",
+      "q": "Do I need to buy or store inventory?",
+      "a": "No. There is zero inventory risk: list products first and order from Sovely only after your customer places and pays for an order. There is no upfront stock, storage or wastage.",
       "keywords": [
         "inventory",
         "stock",
@@ -205,44 +120,112 @@
         "godown",
         "bulk",
         "investment",
-        "upfront"
+        "upfront",
+        "store stock",
+        "zero inventory"
       ]
     },
     {
       "id": "products",
-      "q": "How many products can I sell?",
-      "a": "You get access to {facts.products} ready-to-sell products across {facts.categories} categories, so you can test different products and expand based on demand.",
+      "section": "About Sovely Dropshipping",
+      "q": "How many products and categories can I access?",
+      "a": "The plan documents list access to 10,000+ unique products across 25+ categories, all ready to list with no sourcing delays.",
       "keywords": [
         "how many product",
         "product count",
         "number product",
         "catalogue",
         "catalog",
-        "product range",
         "products"
       ]
     },
     {
       "id": "categories",
-      "q": "What product categories are available?",
-      "a": "We have {facts.categories} categories, including Health and Beauty, Fashion and Accessories, Home and Kitchen, Electronics and Gadgets, Car Accessories, Fitness, Toys and Games, Travel Accessories, Home Decor and Daily Use products.",
+      "section": "About Sovely Dropshipping",
+      "q": "Which product categories are available?",
+      "a": "Examples include Health and Beauty, Fashion and Accessories, Home and Kitchen, Electronics and Gadgets, Car Accessories, Fitness and Workout, Toys and Games, Travel Accessories, Home Decor, and Daily Use Products.",
       "keywords": [
         "category",
         "categories",
         "type product",
         "kind product",
         "fashion",
-        "electronics",
+        "electronics available",
         "kitchen",
         "beauty",
         "toys",
-        "what sell"
+        "what sell",
+        "electronic",
+        "have electronic",
+        "gadget"
+      ]
+    },
+    {
+      "id": "why",
+      "section": "About Sovely Dropshipping",
+      "q": "Why choose Sovely Dropshipping over traditional ecommerce?",
+      "a": "Traditional ecommerce needs money tied up in stock, storage, packaging and shipping. With Sovely Dropshipping you can:\n• Start without bulk inventory\n• Access a ready-to-sell catalogue across many categories\n• Sell through your own store or marketplace account\n• Offer Cash on Delivery (COD) where supported\n• Use Pan India delivery at a flat {charges.delivery} per order\n• Have tracking, COD and RTO handled for you",
+      "keywords": [
+        "why sovely",
+        "why choose",
+        "benefit",
+        "advantage",
+        "traditional",
+        "difference",
+        "why should"
+      ]
+    },
+    {
+      "id": "pan-india",
+      "section": "About Sovely Dropshipping",
+      "q": "Can I sell across India?",
+      "a": "Yes. Sovely supports Pan India delivery through its courier network, subject to courier serviceability and product availability for the customer's pincode.",
+      "keywords": [
+        "across india",
+        "all india",
+        "panindia",
+        "every city",
+        "sell india"
+      ]
+    },
+    {
+      "id": "where-sell",
+      "section": "About Sovely Dropshipping",
+      "q": "Where can I sell Sovely products?",
+      "a": "On your own Shopify store, on Amazon (Marketplace, Amazon Bazar and B2B on the Amazon plans), and by promoting through Instagram, Facebook and WhatsApp to attract customers and enquiries.",
+      "keywords": [
+        "where sell",
+        "where can i sell",
+        "shopify",
+        "instagram",
+        "facebook",
+        "whatsapp sell",
+        "social",
+        "channel",
+        "platform sell",
+        "meta"
+      ]
+    },
+    {
+      "id": "white-label",
+      "section": "About Sovely Dropshipping",
+      "q": "Will products be shipped to my customers without Sovely branding?",
+      "a": "Yes. Sovely supports direct-to-customer fulfilment and aims to give a white-label experience so you can build your own brand.",
+      "keywords": [
+        "branding",
+        "brand",
+        "whitelabel",
+        "my brand",
+        "own brand",
+        "logo",
+        "sovely name"
       ]
     },
     {
       "id": "increase-sales",
-      "q": "How does Sovely help me increase my sales?",
-      "a": "You get a wide range of ready-to-sell products, fulfilment support and PAN India delivery, so your time goes into promoting products and finding customers instead of logistics.",
+      "section": "About Sovely Dropshipping",
+      "q": "How does Sovely help me increase sales?",
+      "a": "By giving you a wide ready-to-sell range, fulfilment support, Pan India delivery, and (on higher plans) store setup, listings, ads and training, so your time goes into promotion and customer acquisition.",
       "keywords": [
         "increase sales",
         "more sales",
@@ -252,9 +235,348 @@
       ]
     },
     {
+      "id": "scale",
+      "section": "About Sovely Dropshipping",
+      "q": "Can I scale my business with Sovely Dropshipping?",
+      "a": "Yes. Start with a few products, find what sells, and widen your catalogue as you grow. The Basic Plan is the foundation of every higher plan, and you can upgrade to Amazon or Shopify anytime.",
+      "keywords": [
+        "scale",
+        "grow business",
+        "expand",
+        "growth"
+      ]
+    },
+    {
+      "id": "plans",
+      "section": "Plans & Pricing",
+      "q": "What plans does Sovely Dropshipping offer, and what do they cost?",
+      "a": "There are four plans, each a one-time fee:\n• {basic.name}: {basic.price} (regular {basic.regularPrice}). Best for {basic.bestFor}.\n• {shopify.name}: {shopify.price} (regular {shopify.regularPrice}). Best for {shopify.bestFor}.\n• {amazon.name}: {amazon.price} (regular {amazon.regularPrice}), or {amazon.gstPrice} if you're already GST registered. Best for {amazon.bestFor}.\n• {combo.name}: {combo.price} (worth {combo.worth}, you save {combo.saving}). Best for {combo.bestFor}.\nAsk me about any plan to see what's included.",
+      "keywords": [
+        "plan",
+        "plan cost",
+        "cost",
+        "pricing",
+        "package",
+        "join cost",
+        "start cost",
+        "subscription cost",
+        "all plan",
+        "plans list"
+      ],
+      "not": [
+        "return",
+        "refund",
+        "cancel",
+        "upgrade"
+      ]
+    },
+    {
+      "id": "monthly-fee",
+      "section": "Plans & Pricing",
+      "q": "Is there a registration fee or monthly subscription?",
+      "a": "Sovely Dropshipping charges a one-time platform access fee, with no monthly platform subscription. Product costs, shipping fees, COD charges and other service charges still apply to the orders and services you use.",
+      "keywords": [
+        "monthly",
+        "monthly fee",
+        "subscription",
+        "registration fee",
+        "recurring",
+        "every month",
+        "yearly",
+        "renewal",
+        "hidden charge",
+        "onetime"
+      ]
+    },
+    {
+      "id": "basic-plan",
+      "section": "Plans & Pricing",
+      "q": "What does the Basic Plan include?",
+      "a": "The {basic.name} is {basic.price} (regular {basic.regularPrice}), a one-time fee. It includes {basic.features}.",
+      "keywords": [
+        "basic",
+        "basic plan",
+        "basic cost",
+        "basic plan cost",
+        "basic plan include",
+        "included basic",
+        "starter plan",
+        "cheap plan"
+      ]
+    },
+    {
+      "id": "shopify-plan",
+      "section": "Plans & Pricing",
+      "q": "What does the Shopify Plan include?",
+      "a": "The {shopify.name} is {shopify.price} (regular {shopify.regularPrice}), a one-time fee. It includes {shopify.features}.",
+      "keywords": [
+        "shopify plan",
+        "shopify plan cost",
+        "shopify package",
+        "shopify plan include",
+        "shopify store cost"
+      ]
+    },
+    {
+      "id": "amazon-plan",
+      "section": "Plans & Pricing",
+      "q": "What does the Amazon Plan include?",
+      "a": "The {amazon.name} is {amazon.price} (regular {amazon.regularPrice}), a one-time fee, or {amazon.gstPrice} if you're already GST registered. It includes {amazon.features}.",
+      "keywords": [
+        "amazon plan",
+        "amazon plan cost",
+        "amazon cost",
+        "amazon package",
+        "amazon plan include",
+        "fba"
+      ]
+    },
+    {
+      "id": "gst-discount",
+      "section": "Plans & Pricing",
+      "q": "Is there a discount if I already have GST?",
+      "a": "Yes. GST-registered sellers get {amazon.gstDiscount} off the {amazon.name}, making the final amount {amazon.gstPrice}.",
+      "keywords": [
+        "gst discount",
+        "already gst",
+        "have gst",
+        "gst registered",
+        "gst number",
+        "discount",
+        "10000",
+        "10,000 plan"
+      ]
+    },
+    {
+      "id": "combo-plan",
+      "section": "Plans & Pricing",
+      "q": "What is the Amazon + Shopify Combo?",
+      "a": "The {combo.name} is a special offer that launches two stores for {combo.price} instead of {combo.worth}, saving {combo.saving}. It includes {combo.features}.",
+      "keywords": [
+        "combo",
+        "combo plan",
+        "combo offer",
+        "combo cost",
+        "amazon shopify",
+        "both platform",
+        "special offer",
+        "offer",
+        "two store"
+      ]
+    },
+    {
+      "id": "amazon",
+      "section": "Plans & Pricing",
+      "q": "Can I sell on Amazon Marketplace, Amazon Bazar and B2B at the same time?",
+      "a": "Yes. The Amazon Plan lets you sell on Amazon Marketplace, Amazon Bazar and Amazon B2B simultaneously.",
+      "keywords": [
+        "sell amazon",
+        "amazon",
+        "amazon bazar",
+        "bazar",
+        "amazon b2b",
+        "marketplace"
+      ]
+    },
+    {
+      "id": "shopify-ads",
+      "section": "Plans & Pricing",
+      "q": "Does the Shopify Plan include Facebook and Instagram ads?",
+      "a": "Yes, it includes creating and managing live Facebook ad campaigns, plus page creation and Shopify and Facebook integration. This FAQ does not say whether the ad budget itself is covered, so confirm this with the Sovely Dropshipping team before you sign up.",
+      "keywords": [
+        "ads budget",
+        "ad budget",
+        "facebook ads",
+        "instagram ads",
+        "ads included",
+        "ad spend",
+        "shopify ad budget",
+        "plan ad budget",
+        "ad budget included"
+      ]
+    },
+    {
+      "id": "logistics",
+      "section": "Plans & Pricing",
+      "q": "What do all plans include for logistics?",
+      "a": "A flat {charges.delivery} delivery charge per order Pan India; {facts.couriers} courier partners ({facts.courierNames}); a same-day tracking ID for every order; fully managed COD and RTO; and a minimum margin of {facts.minMargin}.",
+      "keywords": [
+        "logistics",
+        "all plans include",
+        "what included all"
+      ]
+    },
+    {
+      "id": "min-margin",
+      "section": "Plans & Pricing",
+      "q": "What does the \"100%+ minimum margin\" mean?",
+      "a": "Sovely Dropshipping's B2B pricing is designed so that your profit margin stays at 100% or more on every sale. Your actual profit still depends on the selling price you set and the applicable costs.",
+      "keywords": [
+        "100%",
+        "minimum margin",
+        "100 margin",
+        "margin guarantee"
+      ]
+    },
+    {
+      "id": "support-levels",
+      "section": "Plans & Pricing",
+      "q": "What support do I get?",
+      "a": "Basic: a dedicated support team from day one. Shopify and Combo: a dedicated account manager (one manager across both platforms for the Combo). Amazon: lifetime support and a dedicated account manager.",
+      "keywords": [
+        "what support",
+        "support get",
+        "account manager",
+        "dedicated manager",
+        "lifetime support"
+      ]
+    },
+    {
+      "id": "upgrade",
+      "section": "Plans & Pricing",
+      "q": "Can I upgrade later?",
+      "a": "Yes. The Basic Plan is the core of every higher plan, and you can upgrade to the Amazon or Shopify plan anytime.",
+      "keywords": [
+        "upgrade",
+        "change plan",
+        "switch plan",
+        "later upgrade"
+      ]
+    },
+    {
+      "id": "compare-plans",
+      "section": "Plans & Pricing",
+      "q": "Which plan should I choose?",
+      "a": "It depends on where you want to sell:\n• {basic.name} ({basic.price}): if you already run an online business and want products plus operations.\n• {shopify.name} ({shopify.price}): for your own branded store with ads and social pages.\n• {amazon.name} ({amazon.price}, or {amazon.gstPrice} with GST): for GST, account launch and listings on Amazon.\n• {combo.name} ({combo.price}): if you want both, at the lowest total price.\nYou can also message us on WhatsApp at {contact.whatsapp} for advice.",
+      "keywords": [
+        "which plan",
+        "best plan",
+        "right plan",
+        "compare plan",
+        "plan difference",
+        "difference plan",
+        "suggest plan",
+        "recommend plan",
+        "choose plan"
+      ]
+    },
+    {
+      "id": "signup",
+      "section": "Account Setup, Onboarding & KYC",
+      "q": "How do I get started?",
+      "a": "Choose the plan that fits you, get access to the Sovely Dropshipping panel, pick products from the catalogue, and list them on your store or selling channel. When a customer orders and pays, you place the order with Sovely Dropshipping through the panel and fulfilment begins.",
+      "keywords": [
+        "signup",
+        "get started",
+        "register",
+        "join",
+        "apply",
+        "enroll",
+        "onboard",
+        "buy plan",
+        "how start",
+        "start selling"
+      ]
+    },
+    {
+      "id": "go-live",
+      "section": "Account Setup, Onboarding & KYC",
+      "q": "How quickly can my store go live?",
+      "a": "On the Shopify Plan, Sovely Dropshipping aims to have you live with a fully loaded store, active social pages and running ads in a matter of days.",
+      "keywords": [
+        "go live",
+        "live",
+        "how quickly",
+        "how soon",
+        "how fast store",
+        "store ready"
+      ]
+    },
+    {
+      "id": "shopify-setup",
+      "section": "Account Setup, Onboarding & KYC",
+      "q": "Does Sovely Dropshipping set up my Shopify store?",
+      "a": "Yes. The Shopify Plan launches your Shopify account and builds the store from scratch, lists 4,000+ products, and trains you in product listing so you can keep growing it yourself.",
+      "keywords": [
+        "setup shopify",
+        "shopify setup",
+        "build shopify",
+        "build store",
+        "create store",
+        "store setup",
+        "shopify store"
+      ]
+    },
+    {
+      "id": "gst-registration",
+      "section": "Account Setup, Onboarding & KYC",
+      "q": "Does Sovely Dropshipping register GST for me?",
+      "a": "Yes, on the Amazon Plan and the Combo: GST registration and legal compliance management are included, along with Amazon account launching, category approval and GTIN exception. If you are already GST registered, you receive {amazon.gstDiscount} off the {amazon.name}.",
+      "keywords": [
+        "gst registration",
+        "register gst",
+        "gst help",
+        "gst number help",
+        "get gst",
+        "gstin"
+      ]
+    },
+    {
+      "id": "account-health",
+      "section": "Account Setup, Onboarding & KYC",
+      "q": "Do you help with Amazon account health?",
+      "a": "Yes. The Amazon Plan includes account health check tracking, Ad training, SEO training and AI-based prompt training to launch products.",
+      "keywords": [
+        "account health",
+        "amazon health",
+        "health check"
+      ]
+    },
+    {
+      "id": "kyc",
+      "section": "Account Setup, Onboarding & KYC",
+      "q": "Is KYC required, and what documents do I need?",
+      "a": "Sovely Dropshipping has a dedicated KYC Policy. This FAQ does not list the specific documents or steps, so check the KYC Policy page after logging in, or ask the support team before you pay.",
+      "keywords": [
+        "kyc",
+        "documents",
+        "document required",
+        "verification",
+        "aadhaar",
+        "pan card"
+      ]
+    },
+    {
+      "id": "training",
+      "section": "Account Setup, Onboarding & KYC",
+      "q": "Is training included?",
+      "a": "Yes, on the plans that need it: product listing training (Shopify), and Ad, SEO and AI-prompt training (Amazon). The Combo includes both.",
+      "keywords": [
+        "training",
+        "learn",
+        "teach",
+        "course"
+      ]
+    },
+    {
+      "id": "selling-price",
+      "section": "Products, Pricing & Profit Margins",
+      "q": "Can I choose my own selling price?",
+      "a": "Yes. Set it based on your strategy, audience, competition and target margin. Your earnings are the difference between your selling price and all applicable product and fulfilment costs.",
+      "keywords": [
+        "selling price",
+        "own price",
+        "set price",
+        "decide price",
+        "choose price",
+        "mrp"
+      ]
+    },
+    {
       "id": "profit-before",
+      "section": "Products, Pricing & Profit Margins",
       "q": "Can I see my profit before placing an order?",
-      "a": "Yes. Before confirming an order you can work out your profit: your customer's selling price minus the product cost, shipping, COD and any other charges.",
+      "a": "Yes. Before confirming an order you can estimate profit from your customer's selling price and the applicable product, shipping (flat {charges.delivery} per order), COD and other charges.",
       "keywords": [
         "profit before",
         "calculate profit",
@@ -266,8 +588,9 @@
     },
     {
       "id": "margins",
-      "q": "How much profit or margin can I earn?",
-      "a": "You set your own selling price and keep the difference between that price and the product and fulfilment costs. Sovely's competitive product pricing helps your margin, and you don't spend on inventory or a warehouse. Your exact margin depends on the product and the price you choose.",
+      "section": "Products, Pricing & Profit Margins",
+      "q": "How does Sovely Dropshipping help me earn better margins?",
+      "a": "Sovely Dropshipping offers competitive B2B product pricing designed to keep your minimum margin at 100%+ on every sale, without bulk inventory purchases. With no stock or warehouse to manage, more of your money goes into marketing and growth.",
       "keywords": [
         "margin",
         "how much profit",
@@ -276,137 +599,183 @@
         "income",
         "commission",
         "profit margin",
-        "earn monthly",
-        "how much earn monthly"
+        "earn monthly"
       ]
     },
     {
-      "id": "selling-price",
-      "q": "Can I choose my own selling price?",
-      "a": "Yes. You decide your selling price based on your audience, competition and the margin you want. You earn the difference between your price and the product and fulfilment costs.",
+      "id": "listings",
+      "section": "Products, Pricing & Profit Margins",
+      "q": "How many products can I list?",
+      "a": "On the Basic Plan you can access all 10,000+ products. The Shopify Plan lists 4,000+ products on your store for you, and the Amazon Plan provides 500+ SEO-optimised listings. You can keep adding more after launch.",
       "keywords": [
-        "selling price",
-        "own price",
-        "set price",
-        "decide price",
-        "mrp",
-        "choose price"
+        "how many list",
+        "listing count",
+        "list product",
+        "how many listing"
       ]
     },
     {
-      "id": "cod",
-      "q": "Do you provide COD (Cash on Delivery)?",
-      "a": "Yes, COD is supported, so your customers can pay when the order arrives. The COD charge is {charges.cod} per order, and availability depends on the courier, delivery location and order eligibility.",
+      "id": "quality",
+      "section": "Products, Pricing & Profit Margins",
+      "q": "Who checks product quality?",
+      "a": "Sovely Dropshipping performs quality control before shipment. If a problem appears after shipment (defect or damage), follow the process with an unboxing video and supporting documents.",
       "keywords": [
-        "cod",
-        "cash on delivery",
-        "cod available",
-        "cod charge",
-        "pay on delivery"
+        "quality",
+        "quality check",
+        "qc",
+        "inspect product"
       ]
     },
     {
-      "id": "cod-collection",
-      "q": "Who collects COD payments from customers?",
-      "a": "The delivery partner collects the cash at delivery. The amount then goes through Sovely's settlement process, and you can track eligible payments and settlements in your portal.",
+      "id": "product-details",
+      "section": "Products, Pricing & Profit Margins",
+      "q": "Where can I find product details and descriptions?",
+      "a": "Product details, including whether an item is marked non-returnable, appear in the product description. Sovely Dropshipping also has a Product Description Policy (available on the Sovely Dropshipping portal after login). This FAQ does not detail its rules, so read that page after logging in and match your own listings to it.",
       "keywords": [
-        "collect cod",
-        "cod collect",
-        "cod money",
-        "cod payment",
-        "cod settlement",
-        "cash collect"
-      ]
-    },
-    {
-      "id": "payout",
-      "q": "How and when do I get my profit?",
-      "a": "Your profit is your selling price minus the product cost, shipping, COD fees, taxes and other charges. After the order is delivered and the payment is reconciled, your earnings are added to your portal wallet, and you can redeem them anytime.",
-      "keywords": [
-        "get profit",
-        "receive profit",
-        "payout",
-        "withdraw",
-        "wallet",
-        "transfer profit",
-        "when paid",
-        "settlement",
-        "get money",
-        "receive money",
-        "payment",
-        "when profit",
-        "profit transfer",
-        "receive profit",
-        "profit credited",
-        "profit account",
-        "bank transfer",
-        "payment reach",
-        "payment receive",
-        "how payment",
-        "payment come",
-        "money reach"
+        "product details",
+        "product description",
+        "description policy",
+        "product info"
       ]
     },
     {
       "id": "tracking",
-      "q": "Can I track my orders?",
-      "a": "Yes. You can follow every order's processing, dispatch, delivery and return status through the order management and tracking tools, and a same-day tracking ID is supported.",
+      "section": "Orders & Order Cancellation",
+      "q": "How do I place and track an order?",
+      "a": "Place orders through the Sovely Dropshipping panel. Every order gets a same-day tracking ID, and your customers receive same-day tracking updates. You can follow processing, dispatch, delivery and return status from your order management and tracking view.",
       "keywords": [
         "track",
         "tracking",
         "order status",
         "where order",
-        "track order"
+        "track order",
+        "place order",
+        "how order"
       ]
     },
     {
-      "id": "white-label",
-      "q": "Do you ship to my customers without your branding?",
-      "a": "Yes. Orders ship directly to your customers, and we aim for a white-label experience so you can build your own brand.",
+      "id": "cancel-order",
+      "section": "Orders & Order Cancellation",
+      "q": "Can I cancel an order after it is confirmed?",
+      "a": "No. Orders are processed immediately to ensure prompt delivery, so cancellations are not permitted after confirmation. In rare cases Sovely Dropshipping may cancel an order itself (item out of stock, a pricing error, or an unserviceable pincode), and then the full amount is refunded.",
       "keywords": [
-        "branding",
-        "brand",
-        "white label",
-        "my brand",
-        "own brand",
-        "logo",
-        "sovely name",
-        "invoice name"
+        "cancel",
+        "cancel order",
+        "cancellation",
+        "cancel after confirm"
       ]
     },
     {
-      "id": "packing-returns",
-      "q": "Who handles packing, shipping and returns?",
-      "a": "Sovely handles packing, dispatch and coordination with delivery partners. Eligible returns and RTO shipments follow our return and shipping policies.",
+      "id": "change-order",
+      "section": "Orders & Order Cancellation",
+      "q": "Can I change an order after confirmation (address, products or other details)?",
+      "a": "No. After confirmation, no changes such as adding products, changing the delivery address or updating the order are allowed.",
       "keywords": [
-        "packing",
-        "packaging",
-        "who ship",
-        "who pack",
-        "handle return",
-        "return policy",
-        "returns"
+        "change order",
+        "edit order",
+        "modify order",
+        "change address",
+        "update order",
+        "add product order",
+        "change delivery address",
+        "address after confirm",
+        "change address after"
+      ]
+    },
+    {
+      "id": "check-before-confirm",
+      "section": "Orders & Order Cancellation",
+      "q": "What should I check before confirming an order?",
+      "a": "The customer's full address and pincode, the product and quantity, and the amounts. Because nothing can be edited afterwards, accuracy at this step prevents failed deliveries and RTO costs.",
+      "keywords": [
+        "before confirm",
+        "check before",
+        "confirm order"
+      ]
+    },
+    {
+      "id": "sovely-cancel",
+      "section": "Orders & Order Cancellation",
+      "q": "Can Sovely Dropshipping cancel my order?",
+      "a": "In rare cases, yes: if the item is out of stock, a pricing error occurs, or the delivery pincode is not serviceable.",
+      "keywords": [
+        "sovely cancel",
+        "you cancel",
+        "cancel my order why",
+        "out stock"
+      ]
+    },
+    {
+      "id": "sovely-cancel-refund",
+      "section": "Orders & Order Cancellation",
+      "q": "Do I get my money back if Sovely Dropshipping cancels an order?",
+      "a": "Yes. When Sovely Dropshipping cancels an order for one of these reasons, the full amount is refunded.",
+      "keywords": [
+        "money back cancel",
+        "refund cancel",
+        "refund if cancelled"
+      ]
+    },
+    {
+      "id": "customer-cancel",
+      "section": "Orders & Order Cancellation",
+      "q": "What if my customer asks me to cancel after I have confirmed the order?",
+      "a": "The cancellation policy does not allow it. If the customer later refuses delivery, the RTO and rejection rules apply, including shipping deductions.",
+      "keywords": [
+        "customer cancel",
+        "customer want cancel",
+        "customer ask cancel"
       ]
     },
     {
       "id": "delivery",
-      "q": "How does delivery work and what does it cost?",
-      "a": "We deliver PAN India through {facts.couriers} courier partners. Forward delivery is listed at {charges.delivery} flat, though the final shipping charge can depend on weight, courier and location. Delivery timelines vary by location.",
+      "section": "Shipping, Delivery & RTO",
+      "q": "What is the delivery charge?",
+      "a": "A flat {charges.delivery} per order, Pan India, on every plan.",
       "keywords": [
         "delivery",
-        "shipping",
-        "courier",
         "delivery charge",
         "shipping charge",
         "ship cost",
         "delivery cost",
+        "shipping",
+        "courier charge",
         "deliver"
       ]
     },
     {
+      "id": "couriers",
+      "section": "Shipping, Delivery & RTO",
+      "q": "Which courier partners do you use?",
+      "a": "20+ partners, including Bluedart, DTDC, Ekart and Amazon.",
+      "keywords": [
+        "courier",
+        "courier partner",
+        "which courier",
+        "bluedart",
+        "dtdc",
+        "ekart",
+        "delhivery"
+      ]
+    },
+    {
+      "id": "packing",
+      "section": "Shipping, Delivery & RTO",
+      "q": "Who handles packing and dispatch?",
+      "a": "Sovely Dropshipping supports fulfilment, including packing, dispatch and coordination with delivery partners, shipped directly to your customer.",
+      "keywords": [
+        "packing",
+        "packaging",
+        "who pack",
+        "who ship",
+        "who dispatch"
+      ]
+    },
+    {
       "id": "dispatch",
-      "q": "How long does it take to dispatch an order?",
-      "a": "Dispatch time depends on product availability, order confirmation and warehouse processing, so we can't promise a fixed number of days. Our process is built for timely dispatch.",
+      "section": "Shipping, Delivery & RTO",
+      "q": "How long does dispatch and delivery take?",
+      "a": "Dispatch depends on product availability, order confirmation, warehouse processing and other operational factors. This FAQ does not give a fixed number of days for dispatch or delivery; delivery time depends on the courier and the customer's location.",
       "keywords": [
         "dispatch",
         "how long",
@@ -419,197 +788,464 @@
       ]
     },
     {
+      "id": "pincode",
+      "section": "Shipping, Delivery & RTO",
+      "q": "Can I deliver to every pincode in India?",
+      "a": "Sovely Dropshipping delivers Pan India, subject to courier serviceability and product availability at the customer's pincode. If a pincode is not serviceable, the order may be cancelled with a full refund.",
+      "keywords": [
+        "pincode",
+        "pin code",
+        "every pincode",
+        "serviceable",
+        "village",
+        "my city",
+        "remote"
+      ]
+    },
+    {
       "id": "rto",
-      "q": "What are your RTO charges?",
-      "a": "RTO (Return to Origin) is when an order can't be delivered and goes back to the warehouse. The listed RTO cost is {charges.rto}, but the actual charge can vary with shipment weight, courier and delivery location.",
+      "section": "Shipping, Delivery & RTO",
+      "q": "What is RTO and who manages it?",
+      "a": "RTO (Return to Origin) happens when an order cannot be delivered and goes back to the dispatch location. Sovely Dropshipping fully manages RTO and COD on every plan. RTO charges depend on shipment weight, courier partner, delivery location and the shipping policy.",
       "keywords": [
         "rto",
         "rto charge",
-        "return to origin",
-        "undelivered",
-        "return charge"
+        "return origin",
+        "undelivered"
       ]
     },
     {
       "id": "refused",
-      "q": "What happens if a customer refuses the order?",
-      "a": "If a customer refuses or isn't available, the courier may raise an NDR (Non-Delivery Report) or start the RTO process. Where possible, a reattempt or address correction can be arranged. Charges may apply.",
+      "section": "Shipping, Delivery & RTO",
+      "q": "What happens if my customer refuses the parcel or is unavailable?",
+      "a": "The courier may start an NDR (Non-Delivery Report) or RTO process. Where supported, reattempts or address corrections may be coordinated, and charges may apply. If a customer rejects a parcel after dispatch, 2 times the original shipping charge (forward plus reverse shipping) is deducted before any refund is issued.",
       "keywords": [
         "refuse",
         "refused",
-        "reject",
+        "reject parcel",
         "not accept",
-        "customer cancel",
         "ndr",
-        "not available"
+        "not available",
+        "customer reject"
+      ]
+    },
+    {
+      "id": "reduce-rto",
+      "section": "Shipping, Delivery & RTO",
+      "q": "Can I reduce RTO?",
+      "a": "Confirm the customer's address, pincode and phone number before you confirm the order, since orders cannot be edited afterwards, and make sure your customer expects the delivery, particularly for COD orders.",
+      "keywords": [
+        "reduce rto",
+        "avoid rto",
+        "less rto",
+        "rto tips"
+      ]
+    },
+    {
+      "id": "shipping-policy",
+      "section": "Shipping, Delivery & RTO",
+      "q": "Where can I read the full shipping rules?",
+      "a": "In Sovely Dropshipping's Shipping Policy (available on the Sovely Dropshipping portal after login).",
+      "keywords": [
+        "shipping policy",
+        "shipping rules"
+      ]
+    },
+    {
+      "id": "who-handles-returns",
+      "section": "Returns & Refunds",
+      "q": "Who handles customer returns and refunds?",
+      "a": "As a dropshipping partner you handle your customers' enquiries, returns and refunds. Sovely Dropshipping assists in resolving product issues caused by manufacturing or shipping errors.",
+      "keywords": [
+        "who handle return",
+        "customer return",
+        "handle refund",
+        "customer refund"
+      ]
+    },
+    {
+      "id": "report-window",
+      "section": "Returns & Refunds",
+      "q": "How long do I have to report a problem?",
+      "a": "48 hours from the time the product is received. Requests made after 48 hours may not be accepted.",
+      "keywords": [
+        "48 hour",
+        "report problem",
+        "how long report",
+        "time report",
+        "complaint time"
       ]
     },
     {
       "id": "damaged",
-      "q": "What if a customer receives a damaged or wrong product?",
-      "a": "Raise a return or replacement request through Sovely support. It's reviewed under our product return and replacement policy.",
+      "section": "Returns & Refunds",
+      "q": "What if the product arrives damaged or defective?",
+      "a": "Notify Sovely Dropshipping within 48 hours and provide an unboxing video showing the damage. After the damage or defect is confirmed, Sovely Dropshipping will either replace the product at no additional charge or issue a full refund. For end-customer claims, a full or partial refund is processed based on approval.",
       "keywords": [
         "damaged",
         "damage",
         "defective",
         "broken",
-        "wrong product",
-        "replacement",
         "faulty",
-        "quality"
+        "quality issue"
       ]
     },
     {
-      "id": "shopify",
-      "q": "Can I sell through my Shopify store?",
-      "a": "Yes. You can list Sovely products on your own Shopify store and use our fulfilment. If you want us to build it for you, the {shopify.name} ({shopify.price}) includes full Shopify store setup, 4,000+ listings and Facebook/Instagram ads.",
+      "id": "unboxing-video",
+      "section": "Returns & Refunds",
+      "q": "Why is an unboxing video required?",
+      "a": "It is the evidence used to assess damage, defects and missing items. The video must clearly show the package being opened and its contents. Claims without it are hard to verify.",
       "keywords": [
-        "shopify",
-        "website",
-        "own website",
-        "own store",
-        "online store",
-        "woocommerce"
+        "unboxing",
+        "video",
+        "unboxing video",
+        "why video"
       ]
     },
     {
-      "id": "social",
-      "q": "Can I sell on Instagram, Facebook and WhatsApp?",
-      "a": "Yes. You can promote your products on Instagram, Facebook and WhatsApp to bring in customers and enquiries.",
+      "id": "missing-items",
+      "section": "Returns & Refunds",
+      "q": "What if items are missing from the order?",
+      "a": "Notify Sovely Dropshipping within 48 hours of receipt with an unboxing video showing the package contents. If the claim is confirmed after investigation, the missing items are refunded when Sovely Dropshipping cannot fulfil them.",
       "keywords": [
-        "instagram",
-        "facebook",
-        "whatsapp sell",
-        "social media",
-        "insta",
-        "reels",
-        "meta"
+        "missing",
+        "missing item",
+        "item missing",
+        "less quantity",
+        "short"
       ]
     },
     {
-      "id": "amazon",
-      "q": "Can I sell on Amazon?",
-      "a": "Yes. The {amazon.name} ({amazon.price}) covers Amazon account launch, GST registration support, 500+ SEO listings, ads and SEO training, FBA support and a dedicated account manager. To sell on both Amazon and your own Shopify store, the {combo.name} is {combo.price}.",
+      "id": "wrong-item",
+      "section": "Returns & Refunds",
+      "q": "What if the wrong item was shipped?",
+      "a": "If the error was Sovely Dropshipping's, the item is replaced or a full refund is offered.",
       "keywords": [
-        "amazon",
-        "sell amazon",
-        "marketplace"
-      ],
-      "not": [
-        "flipkart",
-        "meesho",
-        "myntra",
-        "jiomart"
+        "wrong item",
+        "wrong product",
+        "different product",
+        "incorrect product"
       ]
     },
     {
-      "id": "technical",
-      "q": "Do I need technical knowledge?",
-      "a": "No. You don't need technical skills or ecommerce experience. Sovely simplifies product selection and fulfilment so you can focus on marketing.",
+      "id": "electronics",
+      "section": "Returns & Refunds",
+      "q": "Can I return or get a refund for electronic products?",
+      "a": "No. Electronic products are non-returnable, and no return or refund can be processed for defective electronics.",
       "keywords": [
-        "technical",
-        "coding",
-        "tech knowledge",
-        "skills",
-        "computer knowledge",
-        "difficult",
-        "easy",
-        "coding skills",
-        "skill"
+        "electronic return",
+        "electronics refund",
+        "return electronic",
+        "refund electronic",
+        "electronic non returnable",
+        "electronic defective",
+        "electronic warranty"
       ]
     },
     {
-      "id": "pan-india",
-      "q": "Can I sell across India?",
-      "a": "Yes. We deliver PAN India through our courier network, subject to serviceability and product availability at your customer's location.",
+      "id": "non-returnable",
+      "section": "Returns & Refunds",
+      "q": "Which items are not eligible for return or refund?",
+      "a": "• Products that have been used, opened or damaged by the customer\n• Products marked as non-returnable in the product description\n• Electronic products",
       "keywords": [
-        "across india",
-        "all india",
-        "pan india",
-        "every city",
-        "pincode",
-        "village",
-        "my city",
-        "serviceable",
-        "deliver india",
-        "deliver everywhere",
-        "deliver city"
+        "non returnable",
+        "not eligible",
+        "cannot return",
+        "which items return"
+      ]
+    },
+    {
+      "id": "return-condition",
+      "section": "Returns & Refunds",
+      "q": "In what condition must a returned product be?",
+      "a": "Unused, undamaged and in its original condition with the original packaging. A refund is issued only if these conditions are met.",
+      "keywords": [
+        "return condition",
+        "condition return",
+        "original packaging"
+      ]
+    },
+    {
+      "id": "return-process",
+      "section": "Returns & Refunds",
+      "q": "How do I raise a return or refund request?",
+      "a": "1. Notify Sovely Dropshipping within 48 hours of the order being received.\n2. Submit the unboxing video and any supporting documents.\n3. Wait for Sovely Dropshipping to approve or reject the request after assessment.\n4. If approved, follow the return process and keep your customer informed. The customer ships the item back to Sovely Dropshipping.\n5. After the item is received and inspected, Sovely Dropshipping issues the refund or replacement, whichever was communicated earlier during confirmation.",
+      "keywords": [
+        "return process",
+        "how return",
+        "raise return",
+        "refund request",
+        "return request",
+        "return product"
+      ]
+    },
+    {
+      "id": "return-shipping",
+      "section": "Returns & Refunds",
+      "q": "Who pays return shipping?",
+      "a": "The customer or dropshipper bears the return shipping cost. Use a reliable, tracked shipping service to protect the return.",
+      "keywords": [
+        "return shipping",
+        "return courier",
+        "pay return",
+        "who pay return",
+        "pay return shipping",
+        "return cost"
+      ]
+    },
+    {
+      "id": "shipping-refund",
+      "section": "Returns & Refunds",
+      "q": "Are shipping charges refundable?",
+      "a": "No. Shipping charges are non-refundable in all circumstances and for any reason, covering both the original shipping fee and any return shipping cost.",
+      "keywords": [
+        "shipping refundable",
+        "shipping refund",
+        "refund shipping"
+      ]
+    },
+    {
+      "id": "refund-time",
+      "section": "Returns & Refunds",
+      "q": "How long does a refund take?",
+      "a": "Once the return is received and inspected, Sovely Dropshipping informs you whether the refund is approved or rejected. If approved, the refund goes to the original payment method within 7 days of approval.",
+      "keywords": [
+        "refund time",
+        "how long refund",
+        "refund days",
+        "when refund",
+        "refund take"
+      ]
+    },
+    {
+      "id": "rejection-deduction",
+      "section": "Returns & Refunds",
+      "q": "What deductions apply if a customer rejects a parcel?",
+      "a": "If a customer rejects or refuses a parcel after dispatch, 2 times the original shipping charge (forward and reverse shipping) is deducted before any refund is issued.",
+      "keywords": [
+        "deduction",
+        "deduct",
+        "rejection charge",
+        "reject deduction"
+      ]
+    },
+    {
+      "id": "return-policy",
+      "section": "Returns & Refunds",
+      "q": "Where can I read the full return and refund terms?",
+      "a": "In the Return & Refund Policy (available on the Sovely Dropshipping portal after login).",
+      "keywords": [
+        "return policy",
+        "refund policy",
+        "return terms"
+      ]
+    },
+    {
+      "id": "cod",
+      "section": "Payments, COD, Wallet & Withdrawals",
+      "q": "Does Sovely Dropshipping support Cash on Delivery (COD)?",
+      "a": "Yes. Customers can pay when the order is delivered. COD availability depends on the courier service, delivery location and order eligibility.",
+      "keywords": [
+        "cod",
+        "cod available",
+        "cod charge",
+        "pay delivery",
+        "cash"
+      ]
+    },
+    {
+      "id": "cod-collection",
+      "section": "Payments, COD, Wallet & Withdrawals",
+      "q": "Who collects COD payments from customers?",
+      "a": "The authorised delivery partner collects COD at the time of delivery, and the amount goes through the applicable settlement process. You can track eligible order payments and settlements on your portal.",
+      "keywords": [
+        "collect cod",
+        "cod collect",
+        "cod money",
+        "cod payment",
+        "cod settlement"
+      ]
+    },
+    {
+      "id": "profit-calc",
+      "section": "Payments, COD, Wallet & Withdrawals",
+      "q": "How is my profit calculated?",
+      "a": "Your selling price minus the applicable product cost, shipping charges, COD fees, taxes and other charges.",
+      "keywords": [
+        "profit calculated",
+        "calculate my profit",
+        "how profit"
+      ]
+    },
+    {
+      "id": "payout",
+      "section": "Payments, COD, Wallet & Withdrawals",
+      "q": "How and when do I receive my profit?",
+      "a": "After successful delivery and payment reconciliation, your eligible earnings are processed under Sovely Dropshipping's settlement and payout policy. The amount appears in your portal wallet, which you can redeem anytime.",
+      "keywords": [
+        "get profit",
+        "receive profit",
+        "payout",
+        "when profit",
+        "profit transfer",
+        "get money",
+        "receive money",
+        "payment reach",
+        "when paid",
+        "profit credited"
+      ]
+    },
+    {
+      "id": "rto-profit",
+      "section": "Payments, COD, Wallet & Withdrawals",
+      "q": "Do I earn profit on RTO or rejected orders?",
+      "a": "Earnings are processed after successful delivery and payment reconciliation, so an undelivered order does not generate profit. RTO charges and the shipping deductions may apply.",
+      "keywords": [
+        "profit rto",
+        "rto profit",
+        "profit rejected",
+        "earn rto"
+      ]
+    },
+    {
+      "id": "withdrawal",
+      "section": "Payments, COD, Wallet & Withdrawals",
+      "q": "Are there withdrawal limits, timelines or fees?",
+      "a": "Sovely Dropshipping has a Withdrawal Policy (available on the Sovely Dropshipping portal after login). This FAQ does not state minimum amounts, processing times or fees, so check that page after logging in or ask support.",
+      "keywords": [
+        "withdraw",
+        "withdrawal",
+        "withdraw limit",
+        "withdrawal fee",
+        "minimum withdraw",
+        "withdraw money",
+        "withdraw wallet",
+        "withdraw earning"
+      ]
+    },
+    {
+      "id": "plan-refund",
+      "section": "Payments, COD, Wallet & Withdrawals",
+      "q": "Can I get a refund of my plan fee?",
+      "a": "This FAQ does not state a refund rule for the one-time plan fee. Ask the Sovely Dropshipping team and get the answer in writing before paying.",
+      "keywords": [
+        "plan refund",
+        "refund plan",
+        "refund fee",
+        "money back plan",
+        "refund plan fee",
+        "return plan",
+        "cancel plan",
+        "plan money back"
+      ]
+    },
+    {
+      "id": "wallet",
+      "section": "Payments, COD, Wallet & Withdrawals",
+      "q": "Where can I see my payments and settlements?",
+      "a": "In the Sovely Dropshipping portal, where you can see your wallet balance and the status of eligible order payments.",
+      "keywords": [
+        "wallet",
+        "settlement status",
+        "payment status",
+        "see payment"
+      ]
+    },
+    {
+      "id": "policies",
+      "section": "Terms, Privacy & Policies",
+      "q": "Which policies apply to me as a Sovely Dropshipping partner?",
+      "a": "Sovely Dropshipping publishes these policies: Terms, Order Cancellation Policy, Privacy Policy, Grievance Redressal Policy, Return & Refund Policy, Withdrawal Policy, Shipping Policy, Product Description Policy and KYC Policy.",
+      "keywords": [
+        "policy",
+        "policies",
+        "which policy"
+      ]
+    },
+    {
+      "id": "terms",
+      "section": "Terms, Privacy & Policies",
+      "q": "Where do I find the Terms of use?",
+      "a": "On the Terms page in the Sovely Dropshipping portal (available after login). Read it before you buy a plan or place your first order.",
+      "keywords": [
+        "terms",
+        "terms use",
+        "terms conditions"
+      ]
+    },
+    {
+      "id": "privacy",
+      "section": "Terms, Privacy & Policies",
+      "q": "How is my personal and business data handled?",
+      "a": "The Privacy Policy explains how Sovely Dropshipping collects and uses personal data. This FAQ does not describe its details, so read that page for specifics such as what is collected, how it is used and how to raise a data request.",
+      "keywords": [
+        "privacy",
+        "data",
+        "personal data",
+        "data safe"
+      ]
+    },
+    {
+      "id": "faq-vs-policy",
+      "section": "Terms, Privacy & Policies",
+      "q": "What if this FAQ and a policy page differ?",
+      "a": "The policy page is the authority. This FAQ is a summary, and policies can be updated, so check the current policy page for any decision that affects money or an order.",
+      "keywords": [
+        "faq differ",
+        "policy differ",
+        "which correct"
+      ]
+    },
+    {
+      "id": "contact",
+      "section": "Support & Grievance Redressal",
+      "q": "How do I contact Sovely Dropshipping support?",
+      "a": "Website: {contact.website}. Phone/WhatsApp: {contact.whatsapp}. Amazon Plan expert team: {contact.amazonTeam}. Email: {contact.email}. Address: {contact.address}.",
+      "keywords": [
+        "contact",
+        "phone number",
+        "call",
+        "email",
+        "support number",
+        "customer care",
+        "address",
+        "office",
+        "reach"
       ]
     },
     {
       "id": "support",
-      "q": "Does Sovely provide support to sellers?",
-      "a": "Yes. Our team helps with using the platform, choosing products, fulfilment and day-to-day questions. You can reach them on WhatsApp at {contact.whatsapp}.",
+      "section": "Support & Grievance Redressal",
+      "q": "What support will I get after I join?",
+      "a": "Help with platform usage, product selection, order fulfilment and operational queries. Basic includes a dedicated support team; Shopify and Combo include a dedicated account manager; Amazon includes lifetime support and a dedicated account manager.",
       "keywords": [
-        "support",
-        "help",
-        "contact",
-        "customer care",
-        "talk",
-        "call",
-        "phone number",
-        "number",
-        "reach"
-      ],
-      "not": [
-        "payment",
-        "profit",
-        "money",
-        "payout"
+        "support after",
+        "after join",
+        "help after",
+        "support"
       ]
     },
     {
-      "id": "scale",
-      "q": "Can I scale my business with Sovely?",
-      "a": "Yes. Start with a few products and add more as you grow. With {facts.products} products across {facts.categories} categories you can test segments and find winning products without holding stock.",
+      "id": "report-issue",
+      "section": "Support & Grievance Redressal",
+      "q": "How do I report a damaged, defective, missing or wrong item?",
+      "a": "Contact support within 48 hours of delivery with an unboxing video and supporting documents, as.",
       "keywords": [
-        "scale",
-        "grow business",
-        "expand",
-        "big",
-        "growth"
+        "report damaged",
+        "report issue",
+        "report wrong"
       ]
     },
     {
-      "id": "why",
-      "q": "Why choose Sovely over traditional ecommerce?",
-      "a": "Traditional ecommerce needs money for stock, storage, packing and shipping. With Sovely you start without bulk inventory, get {facts.products} products across {facts.categories} categories, offer COD where supported, ship PAN India and spend your time on marketing and growth.",
+      "id": "grievance",
+      "section": "Support & Grievance Redressal",
+      "q": "How do I raise a complaint or escalate an unresolved issue?",
+      "a": "Start with your support contact or account manager. For formal escalation, use the process in the Grievance Redressal Policy (available on the Sovely Dropshipping portal after login). This FAQ does not list its steps or response times.",
       "keywords": [
-        "why sovely",
-        "why choose",
-        "benefit",
-        "advantage",
-        "better",
-        "traditional",
-        "difference",
-        "why choose",
-        "choose",
-        "why should"
-      ],
-      "not": [
-        "data",
-        "scam",
-        "fraud",
-        "privacy",
-        "safe"
-      ]
-    },
-    {
-      "id": "signup",
-      "q": "How do I sign up or get started?",
-      "a": "Fill in the Get Started form on this page and the team will contact you, or message us on WhatsApp at {contact.whatsapp}.",
-      "keywords": [
-        "sign up",
-        "signup",
-        "register",
-        "join",
-        "get started",
-        "start",
-        "apply",
-        "enroll",
-        "account create",
-        "onboard",
-        "buy plan"
+        "complaint",
+        "escalate",
+        "grievance",
+        "unresolved"
       ]
     }
   ]
