@@ -179,7 +179,7 @@
     // Hindi/Kannada script, long or multi-part questions, and follow-ups go to the AI.
     var nonLatin = /[^\x00-\x7f]/.test(String(question).replace(/₹/g, ''));
     var tooLong = meaningful.length > 10;
-    var followUp = opts.hasHistory && meaningful.length <= 3 && (!top || top.score < 2);
+    var followUp = opts.hasHistory && meaningful.length <= 3 && (!top || top.coverage < 0.75);
 
     // Confident when one FAQ clearly wins: either it's the only match, or it leads clearly.
     // Also require the FAQ to cover at least half of what was asked, so
