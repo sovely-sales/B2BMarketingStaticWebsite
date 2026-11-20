@@ -1,0 +1,45 @@
+/* Sovely FAQ chatbot. Sits above the WhatsApp button. */
+.sv-chat-launcher{position:fixed;right:22px;bottom:92px;z-index:60;display:flex;align-items:center;gap:8px;height:52px;padding:0 18px 0 14px;border:0;border-radius:999px;background:var(--ink);color:#fff;font:800 14px "DM Sans",Arial,sans-serif;cursor:pointer;box-shadow:0 12px 30px rgba(0,0,0,.18);transition:transform .2s ease}
+.sv-chat-launcher:hover{transform:translateY(-2px)}
+.sv-chat-launcher svg{width:22px;height:22px;flex:none}
+.sv-chat-launcher .sv-dot{width:8px;height:8px;border-radius:50%;background:var(--green)}
+.sv-chat-launcher[aria-expanded="true"] .sv-chat-launcher-label{display:none}
+.sv-chat-launcher[aria-expanded="true"]{padding:0 15px}
+
+.sv-chat-panel{position:fixed;right:22px;bottom:156px;z-index:60;width:min(380px,calc(100vw - 30px));height:min(560px,calc(100vh - 270px));min-height:320px;display:none;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:22px;box-shadow:0 30px 80px rgba(16,24,14,.22);overflow:hidden;font-family:"DM Sans",Arial,sans-serif}
+.sv-chat-panel.open{display:flex}
+.sv-chat-head{display:flex;align-items:center;gap:11px;padding:15px 16px;background:var(--ink);color:#fff}
+.sv-chat-avatar{width:36px;height:36px;border-radius:12px;background:var(--green);color:#0d170a;display:grid;place-items:center;font-weight:900;font-size:15px;flex:none}
+.sv-chat-head strong{display:block;font-size:15px;line-height:1.2}
+.sv-chat-head span{display:block;font-size:11px;color:#aeb8ae}
+.sv-chat-close{margin-left:auto;width:32px;height:32px;border:0;border-radius:50%;background:#222b22;color:#fff;font-size:20px;line-height:1;cursor:pointer}
+
+.sv-chat-body{flex:1;overflow-y:auto;padding:16px;background:var(--soft);display:flex;flex-direction:column;gap:10px}
+.sv-msg{max-width:85%;padding:10px 13px;border-radius:16px;font-size:14px;line-height:1.5;white-space:pre-wrap;word-wrap:break-word}
+.sv-msg.bot{align-self:flex-start;background:#fff;border:1px solid var(--line);color:var(--ink);border-bottom-left-radius:5px}
+.sv-msg.user{align-self:flex-end;background:var(--green);color:#0d170a;border-bottom-right-radius:5px}
+.sv-msg a{color:#3f7a2b;font-weight:800;text-decoration:underline}
+.sv-msg.note{align-self:center;max-width:100%;background:none;border:0;padding:0;font-size:11px;color:var(--muted);text-align:center}
+.sv-typing{display:inline-flex;gap:4px;align-items:center}
+.sv-typing i{width:6px;height:6px;border-radius:50%;background:#9aa69a;animation:sv-bounce 1.2s infinite}
+.sv-typing i:nth-child(2){animation-delay:.15s}.sv-typing i:nth-child(3){animation-delay:.3s}
+@keyframes sv-bounce{0%,60%,100%{transform:none;opacity:.5}30%{transform:translateY(-4px);opacity:1}}
+
+.sv-chips{display:flex;flex-wrap:wrap;gap:7px;padding:2px 0 4px}
+.sv-chip{border:1px solid #cfe3c4;background:#fff;color:#2f4a26;border-radius:999px;padding:7px 11px;font:700 12px "DM Sans",Arial,sans-serif;cursor:pointer}
+.sv-chip:hover{background:#eef6e9}
+.sv-chips-label{width:100%;font-size:11px;color:var(--muted);font-weight:700}
+
+.sv-chat-form{display:flex;gap:8px;padding:12px;border-top:1px solid var(--line);background:#fff}
+.sv-chat-form input{flex:1;margin:0;border-radius:999px;padding:11px 15px}
+.sv-chat-send{width:44px;height:44px;flex:none;border:0;border-radius:50%;background:var(--green);color:#0d170a;display:grid;place-items:center;cursor:pointer}
+.sv-chat-send:disabled{opacity:.5;cursor:default}
+.sv-chat-send svg{width:18px;height:18px}
+.sv-chat-foot{padding:0 12px 10px;background:#fff;font-size:10px;color:#899189;text-align:center}
+
+@media(max-width:600px){
+  .sv-chat-launcher{right:15px;bottom:82px;height:48px}
+  .sv-chat-launcher .sv-chat-launcher-label{display:none}
+  .sv-chat-launcher{padding:0 13px}
+  .sv-chat-panel{right:12px;left:12px;width:auto;top:78px;bottom:140px;height:auto;min-height:0}
+}

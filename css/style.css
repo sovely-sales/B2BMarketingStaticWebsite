@@ -231,3 +231,120 @@ a{text-decoration:none;color:inherit}.container{width:min(1160px,calc(100% - 40p
 .lead-modal-close:hover {
   opacity: 0.7;
 }
+/* =========================================
+   COMPARE PLANS - CLEAN WHITE DESIGN
+========================================= */
+
+#compare-plans {
+  background: transparent;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+#compare-plans .comparison-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+#compare-plans .comparison-table {
+  width: 100%;
+  min-width: 720px;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 14px;
+  background: #ffffff;
+}
+
+/* HEADER */
+
+#compare-plans .comparison-table thead th {
+  background: #151515;
+  color: #ffffff;
+  padding: 26px 18px;
+  font-size: 17px;
+  font-weight: 700;
+  border-bottom: 3px solid #70c943;
+  height: 115px;
+  vertical-align: middle;
+}
+
+#compare-plans .comparison-table thead th:first-child {
+  text-align: left;
+  color: #70d84b;
+}
+
+#compare-plans .comparison-table thead th span {
+  display: inline-block;
+  margin-top: 12px;
+  color: #70d84b;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* TABLE BODY - WHITE ROWS */
+
+#compare-plans .comparison-table tbody tr {
+  background: #ffffff !important;
+}
+
+#compare-plans .comparison-table tbody td {
+  padding: 16px 15px;
+  color: #333333 !important;
+  background: #ffffff !important;
+  border-bottom: 1px solid #eeeeee;
+  font-size: 14px;
+}
+
+/* FIRST COLUMN */
+
+#compare-plans .comparison-table tbody td:first-child {
+  text-align: left;
+  font-weight: 700;
+  color: #222222 !important;
+}
+
+/* CHECKMARKS */
+#compare-plans .comparison-table .check {
+  color: #22a450 !important;
+  font-size: 20px;
+  font-weight: 800;
+}
+/* HOVER EFFECT */
+
+#compare-plans .comparison-table tbody tr:hover td {
+  background: #f7faf5 !important;
+  transition: background 0.2s ease;
+}
+
+/* BOTTOM ROUNDED CORNERS */
+
+#compare-plans .comparison-table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 12px;
+}
+
+#compare-plans .comparison-table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 12px;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 768px) {
+  #compare-plans {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  #compare-plans .comparison-table {
+    min-width: 720px;
+  }
+
+  #compare-plans .comparison-table thead th,
+  #compare-plans .comparison-table tbody td {
+    padding: 13px 10px;
+  }
+}
